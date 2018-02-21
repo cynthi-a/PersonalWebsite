@@ -1,0 +1,21 @@
+.App-header {
+	background: url(https://s3-us-west-2.amazonaws.com/i.cdpn.io/13871.lDdrF.6abaf63e-21a5-4150-9b24-066c64f52991.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.App-header {
+  padding-bottom: $core-padding;
+  color: white;
+  @include breakpoint(large) {
+    padding: $core-padding * 2;
+  }
+}
+
+.bonnie {
+	max-height: 50px;
+
+	@include breakpoint(large) {
+		max-height: 100px;
+	}
+}

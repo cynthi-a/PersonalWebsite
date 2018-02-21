@@ -1,0 +1,16 @@
+div[class^="component-"] {
+	margin-left: $core-unit;
+	margin-right: $core-unit;
+}
+
+.App-header {
+	text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-title {
+	padding-top: $core-unit;
+}

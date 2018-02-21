@@ -1,0 +1,53 @@
+.navigation-wrapper {
+	margin-bottom: $core-margin;
+}
+
+.navigation-bar {
+	display: flex;
+	@include header-3;
+	text-transform: uppercase;
+}
+
+.small-menu {
+	display: flex;
+	background-color: $color-border;
+
+	.navigation-bar {
+		flex-direction: column;
+	}
+
+	.navigation-bar-link {
+		
+		margin-bottom: $core-padding;
+	}
+
+	div[role=button] {
+		padding: $core-padding;
+	}
+}
+
+.large-menu {
+	.navigation-bar {
+		padding: $core-unit;
+		background-color: $color-border;
+		
+		font-weight: $font-weight-light;
+		margin-bottom: $core-unit;
+
+
+		.navigation-bar-right-column {
+			display: flex;
+			flex-grow: 1;
+			justify-content: flex-end;
+		}
+	}
+}
+
+	.navigation-bar-link {
+		margin-left: $core-unit;
+		color: $color-background;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
