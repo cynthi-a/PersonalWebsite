@@ -64,5 +64,9 @@ typings/
 .cache
 .idea
 
+secrets.json
+
+public
+
 
 # End of https://www.gitignore.io/api/node
