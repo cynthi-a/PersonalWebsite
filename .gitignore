@@ -62,11 +62,13 @@ typings/
 .env
 
 .cache
+.sass-cache
 .idea
 
 secrets.json
 
 public
 
+.map
 
 # End of https://www.gitignore.io/api/node

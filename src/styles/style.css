@@ -70,6 +70,14 @@ body {
     .App-header {
       padding: 20px; } }
 
+.App-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  padding-bottom: 10px; }
+  @media (min-width: 1000px) {
+    .App-title {
+      font-size: 62px; } }
+
 .bonnie {
   max-height: 50px; }
   @media (min-width: 1000px) {

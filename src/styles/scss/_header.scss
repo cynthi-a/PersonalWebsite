@@ -12,6 +12,10 @@
   }
 }
 
+.App-title {
+  @include header-1;
+}
+
 .bonnie {
 	max-height: 50px;
 
