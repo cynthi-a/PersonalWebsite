@@ -3,3 +3,45 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.page-index {
+  display: grid;
+  grid-gap: 10px;
+  
+	
+  grid-template-columns: 1fr;
+    grid-template-areas: 
+    "welcome"
+    "content"
+  	"picture"
+    "self-description";
+
+  @include breakpoint(medium) {
+  	grid-template-columns: 2fr 1fr;
+  	grid-template-areas: 
+  		"welcome welcome"
+  		"content picture"
+  		"content self-description";
+  }
+}
+
+.focus-article-header {
+	grid-area: welcome;
+	@include header-1;
+}
+
+.huiImage {
+	grid-area: picture;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: $core-padding;
+}
+
+.self-description {
+	grid-area: self-description;
+}
+
+.focus-article-body {
+	grid-area: content;
+}

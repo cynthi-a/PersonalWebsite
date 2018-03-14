@@ -12,7 +12,6 @@ class Nav extends Component {
 
   render() {
     return (
-    	<div className="navigation-wrapper">
       <ResponsiveMenu
         menuOpenButton={<TiThMenu />}
         menuCloseButton={<TiTimes />}
@@ -24,14 +23,12 @@ class Nav extends Component {
 					<nav className="navigation-bar">
 						<Link to="/" className="navigation-bar-link">Home</Link>
 						<Link to="/blog" className="navigation-bar-link">Blog</Link>
-						<div className="navigation-bar-right-column">
-							<Link to="/about" className="navigation-bar-link">About</Link>
-						</div>
+						<Link to="/about" className="navigation-bar-link">About</Link>
+            
 					</nav>
 				
         }
       />
-      </div>
     );
   }
 

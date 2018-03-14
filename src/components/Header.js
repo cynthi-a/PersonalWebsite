@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
 import bonnie from '../img/bichon-frise.svg';
+import Nav from "../components/Nav";
 
 class Header extends Component {
 
@@ -10,11 +11,17 @@ class Header extends Component {
 
 	render() {
 		return(
-	    <header className="App-header">
-	      <h1 className="App-title">Welcome to my website!</h1>
-	      <img className="bonnie" src={bonnie} alt="dog logo"/>
-
-	    </header>
+    	  <div>
+		    <header className="App-header">
+		    
+		      <div className="logo">
+		      	[ˈpɛblɒg]
+		      </div>
+		  	  
+		  	  <Nav/>
+		    </header>
+		   </div>
+	    
 		)
 	}
 }

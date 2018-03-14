@@ -1,9 +1,10 @@
 // fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-$primary-font: 'Dancing Script', cursive;
-$secondary-font: 'Raleway', sans-serif;
+// @import url('https://fonts.googleapis.com/css?family=Esteban');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+$primary-font: 'Inconsolata', serif;
+$secondary-font: 'Open Sans Condensed', sans-serif;
 $tertiary-font: 'Roboto', sans-serif;
 
 $font-weight-light: 300;
@@ -20,7 +21,8 @@ $core-margin: 10px;
 // core colours
 $color-foreground: black;
 $color-background: white;
-$color-border: #3f3f3f;
+$color-border: black;
+$color-brand: #ff533d;
 
 // device breakpoints
 @mixin breakpoint($point) {
@@ -30,7 +32,7 @@ $color-border: #3f3f3f;
   @else if $point == medium {
     @media (min-width: 800px) { @content; }
   }
-  @else if $point == large {
+  @else if $point == small {
     @media (min-width: 650px)  { @content; }
   }
 }
@@ -38,15 +40,14 @@ $color-border: #3f3f3f;
 // typography
 @mixin header-1 {
 	font-family: $primary-font;
-	font-size: ($core-unit * 3.6);
-	padding-bottom: $core-unit;
+	font-size: ($core-unit * 2.4);
 
 	@include breakpoint(large) {
-    	font-size: 62px;
+    	font-size: 36px;
   	}
 }
 @mixin header-2 {
-	font-family: $secondary-font;
+	font-family: $primary-font;
 	font-size: ($core-unit * 2.2);
 	padding-bottom: $core-unit;
 
@@ -55,45 +56,51 @@ $color-border: #3f3f3f;
   	}
 }
 @mixin header-3 {
-		font-family: $secondary-font;
-		font-size: ($core-unit * 1.8);
-		padding-bottom: $core-unit;
-		@include breakpoint(large) {
-			font-size: 22px;
-		}
+	font-family: $primary-font;
+	font-size: ($core-unit * 1.8);
+	padding-bottom: $core-unit;
+
+	@include breakpoint(large) {
+		font-size: 22px;
+	}
 }
 @mixin regular-text {
-		font-family: $tertiary-font;
-		font-size: ($core-unit * 1.4);
-		padding-bottom: $core-unit;
+	font-family: $tertiary-font;
+	font-size: ($core-unit * 1.4);
+	padding-bottom: $core-unit;
 }
+body {
+	h1 {
+		@include header-1;
+	}
 
-h1 {
-	-webkit-margin-before: 0;
-	@include header-1;
-}
+	h2 {
+	  @include header-2;
+	}
 
-h2 {
-  @include header-2;
-}
+	h3 {
+	  @include header-3;
+	}
 
-h3 {
-  @include header-3;
-}
+	p {
+	  @include regular-text;
 
-p {
-  @include regular-text;
+	  a {
+	  	text-decoration: underline;
+	  }
+	}
 
-  a {
-  	text-decoration: underline;
-  }
-}
+	a {
+		text-decoration: none;
+		color: $color-foreground;
 
-a {
-	text-decoration: none;
-}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
-h1, h2, h3, h4, p {
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+	h1, h2, h3, h4, p {
+		-webkit-margin-before: $core-margin;
+		-webkit-margin-after: $core-margin;
+	}
 }

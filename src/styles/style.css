@@ -1,44 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-h1 {
-  -webkit-margin-before: 0;
-  font-family: "Dancing Script", cursive;
-  font-size: 36px;
-  padding-bottom: 10px; }
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+body h1 {
+  font-family: "Inconsolata", serif;
+  font-size: 24px; }
   @media (min-width: 1000px) {
-    h1 {
-      font-size: 62px; } }
-
-h2 {
-  font-family: "Raleway", sans-serif;
+    body h1 {
+      font-size: 36px; } }
+body h2 {
+  font-family: "Inconsolata", serif;
   font-size: 22px;
   padding-bottom: 10px; }
   @media (min-width: 800px) {
-    h2 {
+    body h2 {
       font-size: 24px; } }
-
-h3 {
-  font-family: "Raleway", sans-serif;
+body h3 {
+  font-family: "Inconsolata", serif;
   font-size: 18px;
   padding-bottom: 10px; }
   @media (min-width: 1000px) {
-    h3 {
+    body h3 {
       font-size: 22px; } }
-
-p {
+body p {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-bottom: 10px; }
-  p a {
+  body p a {
     text-decoration: underline; }
-
-a {
-  text-decoration: none; }
-
-h1, h2, h3, h4, p {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0; }
+body a {
+  text-decoration: none;
+  color: black; }
+  body a:hover {
+    text-decoration: underline; }
+body h1, body h2, body h3, body h4, body p {
+  -webkit-margin-before: 10px;
+  -webkit-margin-after: 10px; }
 
 div[class^="component-"] {
   margin-left: 10px;
@@ -58,69 +54,120 @@ body {
   padding: 0;
   font-family: sans-serif; }
 
+.page-index {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "welcome" "content" "picture" "self-description"; }
+  @media (min-width: 800px) {
+    .page-index {
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "welcome welcome" "content picture" "content self-description"; } }
+
+.focus-article-header {
+  grid-area: welcome;
+  font-family: "Inconsolata", serif;
+  font-size: 24px; }
+  @media (min-width: 1000px) {
+    .focus-article-header {
+      font-size: 36px; } }
+
+.huiImage {
+  grid-area: picture;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 10px; }
+
+.self-description {
+  grid-area: self-description; }
+
+.focus-article-body {
+  grid-area: content; }
+
 .App-header {
-  background: url(https://s3-us-west-2.amazonaws.com/i.cdpn.io/13871.lDdrF.6abaf63e-21a5-4150-9b24-066c64f52991.png) no-repeat;
   background-position: center;
   background-size: cover; }
 
 .App-header {
-  padding-bottom: 10px;
-  color: white; }
-  @media (min-width: 1000px) {
-    .App-header {
-      padding: 20px; } }
+  background-color: white;
+  margin-bottom: 10px; }
 
 .App-title {
-  font-family: "Dancing Script", cursive;
-  font-size: 36px;
-  padding-bottom: 10px; }
+  display: none;
+  font-family: "Inconsolata", serif;
+  font-size: 24px;
+  margin-bottom: 0;
+  color: black; }
   @media (min-width: 1000px) {
     .App-title {
-      font-size: 62px; } }
+      font-size: 36px; } }
+  @media (min-width: 1000px) {
+    .App-title {
+      display: block; } }
+
+.logo {
+  font-family: "Inconsolata", serif;
+  font-size: 24px;
+  font-size: 2em;
+  padding: 40px; }
+  @media (min-width: 1000px) {
+    .logo {
+      font-size: 36px; } }
+  @media (min-width: 800px) {
+    .logo {
+      font-size: 4em;
+      padding: 60px; } }
 
 .bonnie {
-  max-height: 50px; }
+  max-height: 10vh;
+  margin-bottom: 0;
+  padding-top: 2vh; }
   @media (min-width: 1000px) {
     .bonnie {
-      max-height: 100px; } }
+      max-height: 100px;
+      height: 30vh; } }
+  .bonnie img {
+    fill: #ff533d; }
 
-.navigation-wrapper {
-  margin-bottom: 10px; }
+.header-border-top {
+  background-image: repeating-linear-gradient(30deg, #ff533d, #ff533d 10px, black 10px, black 20px);
+  height: 2vh; }
 
 .navigation-bar {
   display: flex;
-  font-family: "Raleway", sans-serif;
+  justify-content: space-around;
+  font-family: "Inconsolata", serif;
   font-size: 18px;
   padding-bottom: 10px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  opacity: 0.8; }
   @media (min-width: 1000px) {
     .navigation-bar {
       font-size: 22px; } }
 
 .small-menu {
   display: flex;
-  background-color: #3f3f3f; }
-  .small-menu .navigation-bar {
-    flex-direction: column; }
-  .small-menu .navigation-bar-link {
-    margin-bottom: 10px; }
-  .small-menu div[role=button] {
-    padding: 10px; }
+  background-color: black;
+  opacity: 0.8; }
+  .small-menu svg {
+    fill: white; }
 
 .large-menu .navigation-bar {
   padding: 10px;
-  background-color: #3f3f3f;
+  background-color: black;
   font-weight: 300;
-  margin-bottom: 10px; }
-  .large-menu .navigation-bar .navigation-bar-right-column {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end; }
+  margin-bottom: 20px; }
 
 .navigation-bar-link {
-  margin-left: 10px;
   color: white; }
-  .navigation-bar-link:first-child {
-    margin-left: 0; }
+
+.blog-post-title {
+  display: flex;
+  justify-content: space-between; }
+  .blog-post-title span {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "build-css": "sass --watch src/styles/scss/style.scss:src/styles/style.css",
+    "build-css": "sass --watch src/styles/scss/style.scss:src/styles/style.css --sourceMap",
     "develop": "concurrently --kill-others-on-fail \"yarn build-css\" \"gatsby develop\"",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,7 +30,6 @@
   "devDependencies": {
     "prettier": "^1.10.2",
     "s3": "git://github.com/andrewrk/node-s3-client.git#0ed018699843a2d3cc1cb37399ead1f76a72576d",
-    "prettier": "^1.10.2",
     "concurrently": "^3.5.0"
   }
 }
