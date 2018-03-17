@@ -1,47 +1,70 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
-body h1 {
-  font-family: "Inconsolata", serif;
-  font-size: 24px;
-  padding-bottom: 10px; }
-  @media (min-width: 1000px) {
-    body h1 {
-      font-size: 36px; } }
-body h2 {
-  font-family: "Inconsolata", serif;
-  font-size: 22px;
-  padding-bottom: 10px; }
-  @media (min-width: 800px) {
-    body h2 {
-      font-size: 24px; } }
-body h3 {
-  font-family: "Inconsolata", serif;
-  font-size: 18px;
-  padding-bottom: 10px; }
-  @media (min-width: 1000px) {
-    body h3 {
-      font-size: 22px; } }
-body p {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  text-align: justify; }
-  body p a {
-    text-decoration: underline; }
-body a {
-  text-decoration: none;
-  color: black; }
-  body a:hover {
-    text-decoration: underline; }
-body h1, body h2, body h3, body h4, body p {
-  -webkit-margin-before: 10px;
-  -webkit-margin-after: 10px; }
-body ul li {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px; }
-body div {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px; }
+.template-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr minmax(min-content, min-content) 1fr; }
+
+.footer-wrapper {
+  grid-row-start: 3;
+  justify-content: center;
+  display: flex;
+  align-items: flex-end; }
+
+.component-wrapper {
+  grid-row-start: 2; }
+
+.header-wrapper {
+  grid-row-start: 1; }
+
+html {
+  height: 100%; }
+  html body {
+    height: 100%; }
+    html body #___gatsby {
+      height: 100%; }
+    html body h1 {
+      font-family: "Inconsolata", serif;
+      font-size: 24px;
+      padding-bottom: 10px; }
+      @media (min-width: 1000px) {
+        html body h1 {
+          font-size: 36px; } }
+    html body h2 {
+      font-family: "Inconsolata", serif;
+      font-size: 22px;
+      padding-bottom: 10px; }
+      @media (min-width: 800px) {
+        html body h2 {
+          font-size: 24px; } }
+    html body h3 {
+      font-family: "Inconsolata", serif;
+      font-size: 18px;
+      padding-bottom: 10px; }
+      @media (min-width: 1000px) {
+        html body h3 {
+          font-size: 22px; } }
+    html body p {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      text-align: justify; }
+      html body p a {
+        text-decoration: underline; }
+    html body a {
+      text-decoration: none;
+      color: black; }
+      html body a:hover {
+        text-decoration: underline; }
+    html body h1, html body h2, html body h3, html body h4, html body p {
+      -webkit-margin-before: 10px;
+      -webkit-margin-after: 10px; }
+    html body ul li {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px; }
+    html body div {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px; }
 
 .App-header {
   text-align: center; }
@@ -133,45 +156,16 @@ body div {
 .navigation-bar-link {
   color: white; }
 
-.blog-post-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; }
-  .blog-post-title span {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px; }
-
-.blog-post {
-  grid-area: auto; }
-
-.blog-posts-tags {
-  grid-area: tags;
-  justify-self: left; }
-  @media (min-width: 800px) {
-    .blog-posts-tags {
-      justify-self: end; } }
-
-.blog-posts-wrapper {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  grid-template-areas: "blog-post-preview" "tags"; }
-  @media (min-width: 800px) {
-    .blog-posts-wrapper {
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas: "blog-post-preview tags"; } }
-
 .component-tags ul {
   font-family: "Roboto", sans-serif;
   font-size: 14px; }
 
+.component-Footer {
+  width: 100%; }
+
 footer {
   color: black;
   font-size: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
   text-align: center;
   background-color: #d2cdcd;

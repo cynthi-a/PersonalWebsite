@@ -68,47 +68,56 @@ $color-brand: #ff533d;
 	font-family: $tertiary-font;
 	font-size: ($core-unit * 1.4);
 }
-body {
-	h1 {
-		@include header-1;
-	}
+html{
+	height: 100%;
+	body {
+		height: 100%;
 
-	h2 {
-	  @include header-2;
-	}
-
-	h3 {
-	  @include header-3;
-	}
-
-	p {
-	  @include regular-text;
-	  text-align: justify;
-
-	  a {
-	  	text-decoration: underline;
-	  }
-	}
-
-	a {
-		text-decoration: none;
-		color: $color-foreground;
-
-		&:hover {
-			text-decoration: underline;
+		#___gatsby {
+			height: 100%;
 		}
-	}
 
-	h1, h2, h3, h4, p {
-		-webkit-margin-before: $core-margin;
-		-webkit-margin-after: $core-margin;
-	}
+		h1 {
+			@include header-1;
+		}
 
-	ul li {
-		@include regular-text;
-	}
+		h2 {
+		  @include header-2;
+		}
 
-	div {
-		@include regular-text;
+		h3 {
+		  @include header-3;
+		}
+
+		p {
+		  @include regular-text;
+		  text-align: justify;
+
+		  a {
+		  	text-decoration: underline;
+		  }
+		}
+
+		a {
+			text-decoration: none;
+			color: $color-foreground;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		h1, h2, h3, h4, p {
+			-webkit-margin-before: $core-margin;
+			-webkit-margin-after: $core-margin;
+		}
+
+		ul li {
+			@include regular-text;
+		}
+
+		div {
+			@include regular-text;
+		}
 	}
 }

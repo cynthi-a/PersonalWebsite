@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import './index.css'
 
 const TemplateWrapper = ({children}) => (
-    <div>
+    <div className="template-wrapper">
         <Helmet
             title="Cynthia Lee | Web Developer"
             meta={[
@@ -14,8 +14,11 @@ const TemplateWrapper = ({children}) => (
                 {name: 'keywords', content: 'blog, tiny'},
             ]}
         />
-        <Header/>
-        <div
+        <div className="header-wrapper">
+            <Header/>
+        </div>
+        
+        <div className="component-wrapper"
             style={{
                 margin: '0 auto',
                 maxWidth: 960,
@@ -25,7 +28,10 @@ const TemplateWrapper = ({children}) => (
         >
             {children()}
         </div>
-        <Footer />
+
+        <div className="footer-wrapper">
+            <Footer />
+        </div>
     </div>
 )
 

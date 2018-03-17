@@ -1,0 +1,20 @@
+.template-wrapper {
+	height: 100%;
+	display: grid;
+	grid-template-rows: 1fr minmax(min-content, min-content) 1fr;
+}
+
+.footer-wrapper {
+	grid-row-start: 3;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.component-wrapper {
+	grid-row-start: 2;
+}
+
+.header-wrapper {
+	grid-row-start: 1;			
+}
