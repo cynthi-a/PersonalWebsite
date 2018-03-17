@@ -10,7 +10,30 @@ class About extends Component {
 	render() {
 		return(
 			<div className="component-About">
-				<p>Hi, find out more about me <a href="https://en.wikipedia.org/wiki/Hui_people">here</a></p>
+				<div className="quick-facts">
+					<h2>
+						Quick Facts
+					</h2>
+
+				</div>
+
+
+				<div className="welcoming-paragraph">
+					<p>Hi, find out more about me <a href="https://en.wikipedia.org/wiki/Hui_people">here</a></p>
+				</div>
+
+				<div className="wanted-poster">
+					<h2></h2>
+				</div>
+
+				<div className="navigation">
+					<h2></h2>
+				</div>
+
+				<div className="aboutWebsite">
+					<h2>Information On The Website</h2>
+					Here is some information for those who are interested about how I built this site.
+				</div>
 			</div>
 
 			

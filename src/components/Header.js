@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
-import bonnie from '../img/bichon-frise.svg';
+
 import Nav from "../components/Nav";
 
 class Header extends Component {

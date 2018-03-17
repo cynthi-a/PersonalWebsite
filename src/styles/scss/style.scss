@@ -1,6 +1,13 @@
 @import "brand";
 @import "App";
-@import "index";
+
+// Components
 @import "Header";
 @import "Nav";
 @import "blogposts";
+@import "tags";
+@import "footer";
+
+// Pages
+@import "contact";
+@import "index";

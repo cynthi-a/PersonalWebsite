@@ -8,6 +8,7 @@ export default function Blog({data}) {
     const {group: tags} = data.tags;
     return (
         <div className="blog-posts-wrapper">
+          <div className="blog-post">
             {posts
                 .filter(post => post.node.frontmatter.title.length > 0)
                 .map(({node: post}) => {
@@ -25,7 +26,10 @@ export default function Blog({data}) {
                         </div>
                     );
                 })}
-            <Tags tags={tags}/>
+          </div>
+            <div className="blog-posts-tags">
+              <Tags tags={tags}/>
+            </div>
         </div>
     );
 }

@@ -22,7 +22,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "build-css": "sass --watch src/styles/scss/style.scss:src/styles/style.css --sourceMap",
+    "build-css": "sass --watch src/styles/scss/style.scss:src/styles/style.css --sourcemap",
     "develop": "concurrently --kill-others-on-fail \"yarn build-css\" \"gatsby develop\"",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"

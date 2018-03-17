@@ -16,7 +16,7 @@ class Tags extends Component {
 
   render() {
     return(
-      <div>
+      <div className="component-tags">
       <h1>All Tags:</h1>
       <ul>
       {this.props.tags.map(

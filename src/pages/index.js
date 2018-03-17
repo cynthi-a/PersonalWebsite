@@ -11,7 +11,7 @@ class Index extends Component {
         return(
             <div className="page-index">
                 <h1 className="focus-article-header">Hello, World!</h1>
-                <img className="huiImage" src={hui} alt="picture of me"/>
+                <div className="huiImageWrapper"><img className="huiImage" src={hui} alt="picture of me"/></div>
                 <p className="self-description">I'm a German-nationality-holding, UK-tax-paying and generally very conflicted <a href="https://en.wikipedia.org/wiki/Banana_(slur)">banana</a> that was harvested in Hamburg, Germany in 1995. I am as milennial as they come.</p>
                 <p className="focus-article-body">My first personal website</p>
             </div>

@@ -6,11 +6,10 @@ body {
 
 .page-index {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: $core-unit;
   
-	
   grid-template-columns: 1fr;
-    grid-template-areas: 
+  grid-template-areas: 
     "welcome"
     "content"
   	"picture"
@@ -19,7 +18,7 @@ body {
   @include breakpoint(medium) {
   	grid-template-columns: 2fr 1fr;
   	grid-template-areas: 
-  		"welcome welcome"
+  		"welcome picture"
   		"content picture"
   		"content self-description";
   }
@@ -30,12 +29,22 @@ body {
 	@include header-1;
 }
 
+.huiImageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .huiImage {
 	grid-area: picture;
-  margin: 0 auto;
   border-radius: 50%;
-  object-fit: cover;
-  padding: $core-padding;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 0;
+
+  @include breakpoint(medium) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .self-description {

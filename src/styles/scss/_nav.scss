@@ -10,18 +10,10 @@
 	display: flex;
 	background-color: $color-foreground;
 	opacity: 0.8;
-	// .navigation-bar {
-	// 	flex-direction: column;
-	// }
-
-	// .navigation-bar-link {
-		
-	// 	margin-bottom: $core-padding;
-	// }
-
-	// div[role=button] {
-	// 	padding: $core-padding;
-	// }
+	
+	div[role=button] {
+		padding: $core-padding;
+	}
 
 	svg {
 		fill: $color-background;
@@ -31,7 +23,7 @@
 .large-menu {
 	.navigation-bar {
 		padding: $core-unit;
-		background-color: $color-border;
+		background-color: $color-foreground;
 		
 		font-weight: $font-weight-light;
 		margin-bottom: $core-unit * 2;

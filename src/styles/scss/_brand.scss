@@ -21,7 +21,7 @@ $core-margin: 10px;
 // core colours
 $color-foreground: black;
 $color-background: white;
-$color-border: black;
+$color-border: gray;
 $color-brand: #ff533d;
 
 // device breakpoints
@@ -41,7 +41,7 @@ $color-brand: #ff533d;
 @mixin header-1 {
 	font-family: $primary-font;
 	font-size: ($core-unit * 2.4);
-
+	padding-bottom: $core-unit;
 	@include breakpoint(large) {
     	font-size: 36px;
   	}
@@ -67,7 +67,6 @@ $color-brand: #ff533d;
 @mixin regular-text {
 	font-family: $tertiary-font;
 	font-size: ($core-unit * 1.4);
-	padding-bottom: $core-unit;
 }
 body {
 	h1 {
@@ -84,6 +83,7 @@ body {
 
 	p {
 	  @include regular-text;
+	  text-align: justify;
 
 	  a {
 	  	text-decoration: underline;
@@ -102,5 +102,13 @@ body {
 	h1, h2, h3, h4, p {
 		-webkit-margin-before: $core-margin;
 		-webkit-margin-after: $core-margin;
+	}
+
+	ul li {
+		@include regular-text;
+	}
+
+	div {
+		@include regular-text;
 	}
 }

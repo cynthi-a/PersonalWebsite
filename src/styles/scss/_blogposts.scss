@@ -1,12 +1,38 @@
 .blog-post-title {
 	display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 
 	span {	
 		@include regular-text;
 	}
 }
 
-.blog-post-preview {
+.blog-post {
+	grid-area: auto;
+}
 
+.blog-posts-tags {
+	grid-area: tags;
+	justify-self: left;
+
+  @include breakpoint(medium) {
+  	justify-self: end;
+  }
+}
+
+.blog-posts-wrapper {
+  display: grid;
+  grid-gap: $core-unit;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+    grid-template-areas: 
+    "blog-post-preview"
+    "tags";
+
+  @include breakpoint(medium) {
+  	grid-template-columns: 2fr 1fr;
+  	grid-template-areas: 
+  		"blog-post-preview tags"
+  }
 }
