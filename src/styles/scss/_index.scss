@@ -6,11 +6,10 @@ body {
 
 .page-index {
   display: grid;
-  grid-gap: $core-unit;
-  
+  grid-column-gap: $core-unit * 3;
+  grid-row-gap: $core-unit * 2;
   grid-template-columns: 1fr;
   grid-template-areas: 
-    "welcome"
     "content"
   	"picture"
     "self-description";
@@ -18,15 +17,13 @@ body {
   @include breakpoint(medium) {
   	grid-template-columns: 2fr 1fr;
   	grid-template-areas: 
-  		"welcome picture"
   		"content picture"
   		"content self-description";
   }
 }
 
-.focus-article-header {
-	grid-area: welcome;
-	@include header-1;
+.line-through {
+  text-decoration: line-through;
 }
 
 .huiImageWrapper {

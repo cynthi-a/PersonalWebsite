@@ -100,7 +100,7 @@ body div {
     fill: #ff533d; }
 
 .header-border-top {
-  background-image: repeating-linear-gradient(30deg, #ff533d, #ff533d 10px, gray 10px, gray 20px);
+  background-image: repeating-linear-gradient(30deg, #ff533d, #ff533d 10px, #d2cdcd 10px, #d2cdcd 20px);
   height: 2vh; }
 
 .navigation-bar {
@@ -174,10 +174,11 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: gray;
+  background-color: #d2cdcd;
   color: black; }
 
 .contact-links {
+  grid-row-start: 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(min-content, 50px));
@@ -195,7 +196,7 @@ footer {
     flex-direction: column;
     align-items: center; }
   .contact-link svg, .contact-link img {
-    background-color: gray;
+    background-color: #d2cdcd;
     padding: 10px;
     width: 100px;
     height: 100px;
@@ -207,6 +208,14 @@ footer {
         height: 150px;
         padding: 20px; } }
 
+.page-Contact-end {
+  grid-row-start: 3; }
+
+.page-Contact {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+  grid-row-gap: 20px; }
+
 body {
   margin: 0;
   padding: 0;
@@ -214,22 +223,17 @@ body {
 
 .page-index {
   display: grid;
-  grid-gap: 10px;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
   grid-template-columns: 1fr;
-  grid-template-areas: "welcome" "content" "picture" "self-description"; }
+  grid-template-areas: "content" "picture" "self-description"; }
   @media (min-width: 800px) {
     .page-index {
       grid-template-columns: 2fr 1fr;
-      grid-template-areas: "welcome picture" "content picture" "content self-description"; } }
+      grid-template-areas: "content picture" "content self-description"; } }
 
-.focus-article-header {
-  grid-area: welcome;
-  font-family: "Inconsolata", serif;
-  font-size: 24px;
-  padding-bottom: 10px; }
-  @media (min-width: 1000px) {
-    .focus-article-header {
-      font-size: 36px; } }
+.line-through {
+  text-decoration: line-through; }
 
 .huiImageWrapper {
   display: flex;
