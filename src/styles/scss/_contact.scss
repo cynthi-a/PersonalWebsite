@@ -1,0 +1,36 @@
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(min-content, 50px));
+  grid-column-gap: $core-unit * 2;
+}
+
+.contact-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-column: auto;
+	grid-row: auto;
+
+	a {
+	    display: flex;
+        justify-content: center;
+        flex-direction: column;
+    	align-items: center;
+	}
+
+	svg, img {
+		background-color: $color-border;
+		padding: $core-padding;
+		width: 100px;
+		height: 100px;
+		margin-bottom: $core-unit;
+		border-radius: 50%;
+
+		@include breakpoint(large) {
+			width: 150px;
+			height: 150px;
+			padding: $core-padding * 2;
+		}
+	}
+}
