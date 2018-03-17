@@ -1,7 +1,8 @@
 .template-wrapper {
 	height: 100%;
 	display: grid;
-	grid-template-rows: 1fr minmax(min-content, min-content) 1fr;
+	grid-template-rows: min-content min-content 1fr;
+	grid-template-columns: 1fr;
 }
 
 .footer-wrapper {
@@ -13,6 +14,8 @@
 
 .component-wrapper {
 	grid-row-start: 2;
+	-webkit-logical-width: -webkit-fill-available;
+	width: -webkit-stretch;
 }
 
 .header-wrapper {

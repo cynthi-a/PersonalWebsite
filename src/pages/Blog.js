@@ -20,16 +20,15 @@ export default function Blog({data}) {
                                 </h1>
                                 <span>{post.frontmatter.date}</span>
                             </div>
-                            
                             <p>{post.excerpt}</p>
                             <p>Tags: {post.frontmatter.tags}</p>
                         </div>
                     );
                 })}
           </div>
-            <div className="blog-posts-tags">
-              <Tags tags={tags}/>
-            </div>
+          <div className="blog-posts-tags">
+            <Tags tags={tags}/>
+          </div>
         </div>
     );
 }
