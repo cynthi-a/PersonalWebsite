@@ -15,7 +15,7 @@ class Index extends Component {
                     <p>
                         I am a 22-year-old IT professtional based in Manchester, UK.
                         Originally, I am German (Ja, wirklich!) from the most beautiful city in the world, Hamburg.
-                        I came to the beautiful country of Scotland two years ago to pursue my 
+                        I came to wonderful Scotland two years ago to pursue my 
                         <span> </span><span className="line-through">whisky tasting career</span><span> </span>
                         masters degree in Software Development at the University of Glasgow.
                     </p>
