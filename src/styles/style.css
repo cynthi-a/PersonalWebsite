@@ -155,6 +155,8 @@ html {
   background-color: black;
   font-weight: 300;
   margin-bottom: 20px; }
+.large-menu a:active {
+  text-decoration: underline; }
 
 .navigation-bar-link {
   color: white; }
@@ -278,6 +280,10 @@ body {
 .focus-article-body {
   grid-area: content; }
 
+.page-About {
+  display: grid;
+  grid-row-gap: 20px; }
+
 .about-page-icon {
   display: flex;
   justify-content: center; }
@@ -330,7 +336,9 @@ body {
 
 .cv-attribute {
   display: flex;
-  align-items: center; }
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end; }
   .cv-attribute h3 {
     margin-bottom: 0; }
   @media (min-width: 800px) {

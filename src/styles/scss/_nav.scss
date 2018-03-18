@@ -28,6 +28,10 @@
 		font-weight: $font-weight-light;
 		margin-bottom: $core-unit * 2;
 	}
+
+	a:active {
+		text-decoration: underline;
+	}
 }
 
 .navigation-bar-link {

@@ -23,6 +23,7 @@ class Nav extends Component {
 					<nav className="navigation-bar">
 						<Link to="/" className="navigation-bar-link">Home</Link>
 						<Link to="/about" className="navigation-bar-link">About</Link>
+            <Link to="/cv" className="navigation-bar-link">CV</Link>
             <Link to="/contact" className="navigation-bar-link">Contact</Link>
             <Link to="/blog" className="navigation-bar-link">Blog</Link>
 					</nav>

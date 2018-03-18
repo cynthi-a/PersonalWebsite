@@ -1,7 +1,9 @@
 import '../styles/style.css';
 import React, { Component } from 'react';
 import Header from '../components/Header';
-import ThMortarBoard from 'react-icons/lib/ti/mortar-board';
+import GoMortarBoard from 'react-icons/lib/go/mortar-board';
+import FaBriefcase from 'react-icons/lib/fa/briefcase';
+import TiWeatherSnow from 'react-icons/lib/ti/weather-snow';
 
 class About extends Component {
 	constructor() {
@@ -10,8 +12,8 @@ class About extends Component {
 
 	render() {
 		return(
-			<div className="component-About">
-				<div className="quick-facts">
+			<div className="page-About">
+				<div className="quick-facts about-section-item">
 					<h1>
 						Quick Facts
 					</h1>
@@ -28,7 +30,7 @@ class About extends Component {
 
 						<div className="fact">
 							<h3 className="fact-attribute">
-								Nationality
+								Nationality and Place of Birth
 							</h3>
 							<div className="fact-value">
 								German
@@ -46,7 +48,7 @@ class About extends Component {
 
 						<div className="fact">
 							<h3 className="fact-attribute">
-								Pizza Topping
+								Favourite Pizza Topping
 							</h3>
 							<div className="fact-value">
 								Pineapple
@@ -55,67 +57,6 @@ class About extends Component {
 
 
 					</div>
-				</div>
-
-				<h1>
-					CV
-				</h1>
-
-				<div className="cv-section">
-					<div className="cv-section-head">
-						<h2>
-							Education
-						</h2>
-						<div className="about-page-icon">
-							<ThMortarBoard />
-						</div>
-					</div>
-				
-					<div className="cv-item">
-						<div className="cv-attribute">
-								<h3>
-									University of Glasgow
-								</h3>
-						</div>
-
-
-						<div className="cv-value">
-							<div className="cv-value-description">
-								<ul>
-									<li>MSc Software Development</li>
-									<li>One-year, practice-oriented conversion masters degree</li>
-									<li>Here is where I learnt how to program</li>
-									<li>Main taught language was Java</li>
-								</ul>
-							</div>
-							<div className="cv-value-timespan">
-								2016 - 2017
-							</div>
-						</div>
-					</div>
-				
-					<div className="cv-item">
-						<div className="cv-attribute">
-								<h3>
-									Hochschule Fresenius
-								</h3>
-						</div>
-
-						<div className="cv-value">
-							<div className="cv-value-description">
-								<ul>
-									<li>BSc Business Psychology</li>
-									<li>Main modules: organisational psychology and consulting and international business</li>
-									<li>One semester abroad at <bold>Shanhai University</bold> in 2015</li>
-									<li>Aquired the knowledge to conduct (psychological) studies and more importantly, to question and analyse them</li>
-								</ul>
-							</div>
-							<div className="cv-value-timespan">
-								2013 - 2016
-							</div>
-						</div>
-					</div>
-
 				</div>
 
 				<div className="staged-images">
