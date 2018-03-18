@@ -4,16 +4,17 @@ import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import './index.css'
+import Favicon from '../img/favicon.png'
 
 const TemplateWrapper = ({children}) => (
     <div className="template-wrapper">
-        <Helmet
-            title="Cynthia Lee | Web Developer"
-            meta={[
-                {name: 'description', content: 'Super great personal page'},
-                {name: 'keywords', content: 'blog, tiny'},
-            ]}
-        />
+        <Helmet>
+            <title>Cynthia Lee | Web Developer</title>
+             <meta name="description" content="Super great personal page" />
+             <meta name="keywords" content="Software Engineer and IT professional in Manchester" />
+            <link rel="icon" href={Favicon} type="image/png" />
+        </Helmet>
+        
         <div className="header-wrapper">
             <Header/>
         </div>
