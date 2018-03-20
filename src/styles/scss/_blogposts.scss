@@ -1,12 +1,7 @@
-.blog-post-title {
+.blog-post-preview-title {
 	display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-}
-
-.blog-post {
-	grid-area: auto;
-
+  align-items: baseline;
 }
 
 .blog-posts-tags {
@@ -22,7 +17,6 @@
   display: grid;
   grid-gap: $core-unit;
   grid-template-rows: auto;
-  // grid-template-columns: 1fr;
     grid-template-areas: 
     "blog-post-preview"
     "tags";

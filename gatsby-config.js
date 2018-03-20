@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Cynthia Lee | Web Developer',
   },
     plugins: [
         'gatsby-plugin-catch-links',

@@ -21,16 +21,13 @@
 	}
 
 	svg, img {
+		width: 80px;
+		height: 80px;
 		background-color: $color-border;
-		padding: $core-padding;
-		width: 100px;
-		height: 100px;
 		margin-bottom: $core-unit;
 		border-radius: 50%;
 
 		@include breakpoint(large) {
-			width: 150px;
-			height: 150px;
 			padding: $core-padding * 2;
 		}
 	}

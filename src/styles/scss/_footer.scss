@@ -4,10 +4,12 @@
 
 footer {
   color: black;
-  font-size: 10px;
+  font-size: 12px;
   width: 100%;
-  text-align: center;
+  align-items: center;
   background-color: $color-border;
   color: black;
-
+  height: 40px;
+  display: flex;
+  justify-content: center;
 }

@@ -30,7 +30,7 @@ class About extends Component {
 
 						<div className="fact">
 							<h3 className="fact-attribute">
-								Nationality and Place of Birth
+								Nationality
 							</h3>
 							<div className="fact-value">
 								German
@@ -54,7 +54,6 @@ class About extends Component {
 								Pineapple
 							</div>
 						</div>
-
 
 					</div>
 				</div>

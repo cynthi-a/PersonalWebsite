@@ -16,27 +16,35 @@ class Contact extends Component {
 				<h2 className="page-Content-start"> Get in touch - There isn't just one way of doing it</h2>
 				<div className="contact-links">
 					<div className="contact-link">
-						<a href="mailto:cynthia.htlee@gmail.com">
-							<TiMail />
-							<div>Email</div>
+						<a href="mailto:cynthia@cynthialee.xyz">
+							<div className="contact-link-icon">
+								<TiMail />
+							</div>
+							Email
 						</a>
 					</div>
 					<div className="contact-link">
 						<a href="https://github.com/cynthi-a" target="_blank">
-							<TiSocialGithub />
-						GitHub
+							<div className="contact-link-icon">
+								<TiSocialGithub />
+							</div>
+							GitHub
 						</a>
 					</div>
 					<div className="contact-link">
 						<a href="https://www.xing.com/profile/Cynthia_Lee6/cv?sc_o=mxb_p" target="_blank">
-							<img src={xing} alt="Xing Logo" />
-						XING
+							<div className="contact-link-icon">
+								<img src={xing} alt="Xing Logo" />
+							</div>
+							XING
 						</a>
 					</div>
 					<div className="contact-link">
 						<a href="https://www.facebook.com/CynthiaHTLee" target="_blank">
-							<TiSocialFacebook />
-						Facebook
+							<div className="contact-link-icon">
+								<TiSocialFacebook />
+							</div>
+							Facebook
 						</a>
 					</div>
 				</div>

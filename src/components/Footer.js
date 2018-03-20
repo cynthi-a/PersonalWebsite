@@ -15,7 +15,7 @@ class Footer extends Component {
 		    <footer>
 		    
 		      <span className="footer-content">
-		      	[ˈpɛblɒg] 2018 | Design and Development by Cynthia Lee
+	      		&#169; Cynthia Lee 2018
 		      </span>
 		  	  
 		    </footer>

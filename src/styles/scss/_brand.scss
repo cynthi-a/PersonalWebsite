@@ -67,6 +67,7 @@ $color-brand: #ff533d;
 @mixin regular-text {
 	font-family: $tertiary-font;
 	font-size: ($core-unit * 1.4);
+	line-height: 1.6;
 }
 html{
 	height: 100%;

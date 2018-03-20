@@ -15,7 +15,7 @@ class Header extends Component {
 		    <header className="App-header">
 		    
 		      <div className="logo">
-		      	[ˈpɛblɒg]
+		      	&#123; Cynthia Lee &#125;
 		      </div>
 		  	  
 		  	  <Nav/>

@@ -1,0 +1,81 @@
+.cv-section {
+	display: grid;
+	@include breakpoint(medium) {
+		grid-row-gap: 20px;
+	}
+}
+
+.cv-section-head {
+  border-bottom: 1px solid;
+  width: 100%;
+	h2 {
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+	grid-row-start: 1;
+
+	@include breakpoint(medium) {
+		justify-self: center;
+	}
+}
+
+.cv-item {
+	display: grid;
+	grid-column-gap: $core-unit * 2;
+
+	@include breakpoint(medium) {
+  	grid-template-columns: 1fr 2fr;
+	}
+
+}
+
+.cv-attribute {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end;
+	h3 {
+		margin-bottom: 0;
+	}
+
+	@include breakpoint(medium) {
+		justify-self: end;
+		grid-column-start: 1;
+
+		h3 {
+			margin-bottom: $core-margin;
+		}
+	}
+}
+
+.cv-value {
+	display: grid;
+	grid-template-areas:
+		"timespan timespan"
+		"description .";
+	grid-column-gap: $core-unit;
+	grid-row-gap: $core-unit;
+
+	@include breakpoint(medium) {
+		grid-template-areas:
+			"description timespan"
+			"description .";
+		grid-column-start: 2;	
+	}
+}
+
+
+.cv-value-description {
+	grid-area: description;
+
+}
+
+.cv-value-timespan {
+	grid-area: timespan;
+	align-self: center;
+	
+	@include breakpoint(medium) {
+		justify-self: end;
+	}
+}
