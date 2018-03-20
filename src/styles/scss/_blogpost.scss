@@ -24,7 +24,13 @@
 	height: 30vh;
   align-items: flex-end;
   display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+
+  @include breakpoint(medium) {
+  	height: 40vh;
+  }
 }
 
 .blog-post-header-title {
@@ -47,5 +53,18 @@
 
 	img {
 
+	}
+}
+
+.blog-post-tags {
+	text-align: right;
+	
+	h2 {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	ul {
+		 list-style-type: none;
+		 padding-left: 0;
 	}
 }

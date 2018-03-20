@@ -1,11 +1,13 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Tags from "../components/Tags";
+import Link from "gatsby-link";
 
 export default function Template({
       data, // this prop will be injected by the GraphQL query we'll write in a bit
     }) {
     const { markdownRemark: post } = data; // data.markdownRemark holds our post data
+
     return (
         <div className="blog-post-wrapper">
             <Helmet>
@@ -26,8 +28,20 @@ export default function Template({
                 />
 
                 <div className="blog-post-tags">
-
-                  <Tags tags={post.frontmatter.tags}/>
+                  <h2>Tags</h2>
+                  <ul>
+                    
+                    {post.frontmatter.tags.map(
+                      (tag, index) => (
+                          <li key={index}>
+                            <Link to={`/tags/${(tag)}/`}>
+                              # {tag}
+                            </Link>
+                          </li>
+                        ) 
+                      )
+                    }
+                  </ul>
                 </div>
 
             </div>

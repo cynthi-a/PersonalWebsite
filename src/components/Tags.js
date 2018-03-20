@@ -17,15 +17,17 @@ class Tags extends Component {
   render() {
     return(
       <div className="component-tags">
-      <h1>All Tags:</h1>
+        <div className="component-tags-header">
+          <h1>All Blog Tags</h1>
+        </div>
       <ul>
       {this.props.tags.map(
         (tag, index) => (
-          <li key={index}>
-            <Link to={`/tags/${(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
+            <li key={index}>
+              <Link to={`/tags/${(tag.fieldValue)}/`}>
+                {tag.fieldValue} ({tag.totalCount})
+              </Link>
+            </li>
           ) 
         )
       }

@@ -2,7 +2,7 @@
 path: "/bonnir"
 date: "2017-07-12"
 title: "Bonnir"
-tags: ["dog"]
+tags: ["dog", "white"]
 featureimage: "http://bonniebon.de/images/3.jpeg"
 ---
 
