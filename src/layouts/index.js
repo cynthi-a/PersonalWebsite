@@ -5,6 +5,8 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Favicon from '../img/favicon.png'
 
+import "prismjs/themes/prism-solarizedlight.css";
+
 const TemplateWrapper = ({children}) => (
   <div className="template-wrapper">
     <Helmet>
@@ -39,7 +41,8 @@ const TemplateWrapper = ({children}) => (
     <div className="footer-wrapper">
       <Footer />
     </div>
-  </div>
+
+  </div> 
 )
 
 TemplateWrapper.propTypes = {

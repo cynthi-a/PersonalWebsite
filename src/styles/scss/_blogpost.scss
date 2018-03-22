@@ -3,17 +3,17 @@
   grid-gap: 20px;
   grid-template-areas:
 	  "blog-title"
+  	  "blog-date"
 	  "blog-content"
 	  "tags";
 
 		  
   @include breakpoint(medium) {
-  	h2 {
-  		margin-top: 0;
-  	}
 	  grid-template-columns: 3fr 1fr;
 	  grid-template-areas:
 		  "blog-title blog-title"
+		  "blog-date blog-date"
+	  	  "blog-content tags"
 		  "blog-content tags";
   }
   	
@@ -29,18 +29,22 @@
   background-position: center;
 
   @include breakpoint(medium) {
+  	h2 {
+  		margin-top: 0;
+  	}
   	height: 40vh;
   }
 }
 
 .blog-post-header-title {
-	background-color: $color-background;
+  background-color: $color-background;
   width: fit-content;
   border-top-right-radius: 30px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 60%;
 
 	h1 {
 		padding:0;		
@@ -52,11 +56,17 @@
 	grid-area: blog-content;
 
 	img {
-
+		max-height: 20vh;
+		padding: 10px;
+		
+		@include breakpoint(medium) {
+			float: left;
+		}
 	}
 }
 
 .blog-post-tags {
+	grid-area: tags;
 	text-align: right;
 	
 	h2 {

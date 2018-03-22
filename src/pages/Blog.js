@@ -21,7 +21,7 @@ export default function Blog({data}) {
                                 <span>{post.frontmatter.date}</span>
                             </div>
                             <p>{post.excerpt}</p>
-                            <p>Tags: {post.frontmatter.tags}</p>
+                            <p>Tags: {post.frontmatter.tags.join(', ')}</p>
                         </div>
                     );
                 })}
@@ -38,13 +38,14 @@ query BlogQuery {
     posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 300)
           id
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD/MM/YYYY")
             path
             tags
+            featureimage
           }
         }
       }

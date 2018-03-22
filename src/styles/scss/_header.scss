@@ -23,11 +23,11 @@
 .logo {
   @include header-1;
   font-size: 2em;
-  padding: 40px;
+  padding: 30px;
 
   @include breakpoint(medium) {
-    font-size: 4em;
-    padding: 60px;
+    font-size: 5em;
+    padding: 40px;
   }
 }
 

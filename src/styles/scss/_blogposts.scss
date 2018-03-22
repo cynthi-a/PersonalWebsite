@@ -6,7 +6,6 @@
 
 .blog-posts-tags {
 	grid-area: tags;
-	justify-self: left;
 
   @include breakpoint(medium) {
   	justify-self: end;

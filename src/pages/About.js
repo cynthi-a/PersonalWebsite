@@ -4,13 +4,38 @@ import Header from '../components/Header';
 import GoMortarBoard from 'react-icons/lib/go/mortar-board';
 import FaBriefcase from 'react-icons/lib/fa/briefcase';
 import TiWeatherSnow from 'react-icons/lib/ti/weather-snow';
+import Gallery from 'react-photo-gallery';
+
 
 class About extends Component {
+
 	constructor() {
 		super();
 	}
 
 	render() {
+		const PHOTO_SET = [
+		  {
+		    src: 'http://bonniebon.de/images/1.jpeg',
+		    width: 4,
+		    height: 3
+		  },
+		  {
+		    src: 'http://bonniebon.de/images/2.jpeg',
+		    width: 2,
+		    height: 3
+		  },
+  		  {
+		    src: 'http://bonniebon.de/images/3.jpeg',
+		    width: 3,
+		    height: 4
+		  },
+		  {
+		    src: 'http://bonniebon.de/images/4.jpeg',
+		    width: 3,
+		    height: 4
+		  }
+		];
 		return(
 			<div className="page-About">
 				<div className="quick-facts about-section-item">
@@ -60,15 +85,12 @@ class About extends Component {
 
 				<div className="staged-images">
 					<h1>
-						A collection of unreasonably staged images of me in unnatural environments
+						Pictures of my dog
 					</h1>
+					<p>To distract from how boring I am. Her name is <a href="http://bonniebon.de" target="_blank">Bonnie</a>.</p>
+					<Gallery columns="2" photos={PHOTO_SET} />
 				</div>
 
-
-				<div className="aboutWebsite">
-					<h2>Information On The Website</h2>
-					Here is some information for those who are interested about how I built this site.
-				</div>
 			</div>
 
 		)

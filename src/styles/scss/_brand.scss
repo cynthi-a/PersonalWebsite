@@ -43,7 +43,7 @@ $color-brand: #ff533d;
 	font-size: ($core-unit * 2.4);
 	padding-bottom: $core-unit;
 	@include breakpoint(large) {
-    	font-size: 36px;
+    	font-size: 26px;
   	}
 }
 @mixin header-2 {
@@ -120,5 +120,11 @@ html{
 		div {
 			@include regular-text;
 		}
+
+
+		code {
+			color: #9C27B0;
+		}
+	
 	}
 }

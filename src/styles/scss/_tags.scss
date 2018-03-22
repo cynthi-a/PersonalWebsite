@@ -1,5 +1,7 @@
 .component-tags {
+	text-align: right;
 	ul {
 		@include regular-text;
+		list-style-type: none;
 	}
 }

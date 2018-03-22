@@ -4,7 +4,7 @@ import Tags from "../components/Tags";
 import Link from "gatsby-link";
 
 export default function Template({
-      data, // this prop will be injected by the GraphQL query we'll write in a bit
+      data // this prop will be injected by the GraphQL query we'll write in a bit
     }) {
     const { markdownRemark: post } = data; // data.markdownRemark holds our post data
 
@@ -28,6 +28,7 @@ export default function Template({
                 />
 
                 <div className="blog-post-tags">
+                  <div className="blog-post-date">{post.frontmatter.date}</div>
                   <h2>Tags</h2>
                   <ul>
                     
@@ -43,7 +44,6 @@ export default function Template({
                     }
                   </ul>
                 </div>
-
             </div>
         </div>
     );
@@ -54,7 +54,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "Do MMMM, YYYY")
         path
         title
         featureimage

@@ -25,7 +25,7 @@ class Tags extends Component {
         (tag, index) => (
             <li key={index}>
               <Link to={`/tags/${(tag.fieldValue)}/`}>
-                {tag.fieldValue} ({tag.totalCount})
+                # {tag.fieldValue} ({tag.totalCount})
               </Link>
             </li>
           ) 

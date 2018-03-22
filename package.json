@@ -1,17 +1,19 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "personal-website",
+  "description": "Cynthias personal website and blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Cynthia Lee <cynthia@cynthia.xyz>",
   "dependencies": {
     "gatsby": "^1.9.202",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-catch-links": "^1.0.16",
     "gatsby-plugin-react-helmet": "^2.0.5",
+    "gatsby-remark-prismjs": "^1.2.20",
     "gatsby-source-filesystem": "^1.5.20",
-    "gatsby-transformer-remark": "^1.7.32",
+    "gatsby-transformer-remark": "^1.7.37",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
+    "react-photo-gallery": "^6.0.22",
     "react-responsive-navbar": "^1.0.11",
     "react-router-dom": "^4.2.2"
   },

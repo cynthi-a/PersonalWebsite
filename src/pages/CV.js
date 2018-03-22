@@ -41,7 +41,7 @@ class CV extends Component {
 									<li>Graduate Software Engineer</li>
 									<li>Fullstack web development, from services to user interfaces, of various e-commerce sites (e.g. Nintento Online Store, MyProtein, Illamasqua, Probikekit)</li>
 									<li>Dealing with legacy systems</li>
-									<li>Exposure to lots of other facets of a big tech company, e.g. UX and UI design</li>
+									<li>Exposure to lots of other facets of a big tech company e.g. UX and UI design, SEO</li>
 									<li>Main technologies: Java, JavaScript, Sass</li>
 								</ul>
 							</div>
