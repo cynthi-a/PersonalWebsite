@@ -3,7 +3,8 @@ import React from 'react'
 const NotFoundPage = () => (
   <div>
     <h1>404 - Page not found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    
+    <img src="https://httpstatusdogs.com/img/404.jpg" alt="404 page not found" />
   </div>
 )
 

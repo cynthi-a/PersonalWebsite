@@ -1,0 +1,22 @@
+.imageColumn {
+    display: flex;
+    flex-direction: column;
+  img {
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+  }
+
+}
+
+.imageRow {
+  display: grid;
+  width: 100%;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr;  
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  
+  }
+}

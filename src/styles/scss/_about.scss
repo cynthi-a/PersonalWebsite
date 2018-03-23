@@ -14,7 +14,7 @@
 }
 
 .facts {
-	display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(min-content, 50px));
   grid-column-gap: $core-unit * 2;

@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-// Components
 import Link from "gatsby-link";
 
 const Tags = ({ pathContext, data }) => {
@@ -24,10 +22,7 @@ const Tags = ({ pathContext, data }) => {
           );
         })}
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              We'll come back to it!
-            */}
+
       <Link to="/tagspage">All tags</Link>
     </div>
   );
