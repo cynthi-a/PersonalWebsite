@@ -11,7 +11,7 @@ const TemplateWrapper = ({children}) => (
     <Helmet>
       <title>Cynthia Lee | Web Developer</title>
       <meta name="description" content="Cynthia Lee is an IT professional based in Manchester who does full-stack web development" />
-      <meta name="keywords" content="fullstack, web developer, Manchester, cynthia, lee" />
+      <meta name="keywords" content="full stack, web developer, Manchester, cynthia, lee" />
       <meta name="author" content="Cynthia Lee" />
       <link rel="canonical" href="http://cynthialee.xyz" />
       <meta property="og:site_name" content="Cynthia" />

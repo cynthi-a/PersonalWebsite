@@ -3,7 +3,6 @@
   grid-gap: 20px;
   grid-template-areas:
 	  "blog-title"
-  	  "blog-date"
 	  "blog-content"
 	  "tags";
 
@@ -12,7 +11,6 @@
 	  grid-template-columns: 3fr 1fr;
 	  grid-template-areas:
 		  "blog-title blog-title"
-		  "blog-date blog-date"
 	  	  "blog-content tags"
 		  "blog-content tags";
   }
@@ -20,8 +18,8 @@
 }
 
 .blog-post-header {
-	grid-area: blog-title;
-	height: 30vh;
+  grid-area: blog-title;
+  height: 30vh;
   align-items: flex-end;
   display: flex;
   background-size: cover;
@@ -40,7 +38,7 @@
   background-color: $color-background;
   width: fit-content;
   border-top-right-radius: 30px;
-  padding-left: 20px;
+  
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -63,6 +61,10 @@
 			float: left;
 		}
 	}
+}
+
+.blog-post-date {
+	margin-top: $core-margin;
 }
 
 .blog-post-tags {

@@ -4,6 +4,8 @@ import TiSocialGithub from 'react-icons/lib/ti/social-github';
 import xing from '../img/xing.png';
 import TiSocialFacebook from 'react-icons/lib/ti/social-facebook';
 import TiMail from 'react-icons/lib/ti/mail';
+import TiSocialLinkedin from 'react-icons/lib/ti/social-linkedin';
+
 class Contact extends Component {
 	constructor() {
 		super();
@@ -47,6 +49,17 @@ class Contact extends Component {
 							Facebook
 						</a>
 					</div>
+
+					<div className="contact-link">
+						<a href="https://www.linkedin.com/in/cynthia-ht-lee/" target="_blank">
+							<div className="contact-link-icon">
+								<TiSocialLinkedin />
+							</div>
+							LinkedIn
+						</a>
+					</div>
+
+					
 				</div>
 				<div className="page-Contact-end">
 					<h3>
