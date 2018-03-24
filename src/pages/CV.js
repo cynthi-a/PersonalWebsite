@@ -96,7 +96,7 @@ class CV extends Component {
 									Fresenius University of Applied Sciences
 								</h3>
 								<div>
-								Hamburg, Germany
+									Hamburg, Germany
 								</div>
 						</div>
 
@@ -105,7 +105,7 @@ class CV extends Component {
 								<ul>
 									<li>BSc Business Psychology</li>
 									<li>Main modules: organisational psychology and consulting and international business</li>
-									<li>One semester abroad at <b>Shanghai University</b> in 2015</li>
+									<li>One semester abroad at <i>Shanghai University</i> in 2015</li>
 									<li>Acquired the knowledge to conduct (psychological) studies and more importantly, to question and analyse them</li>
 								</ul>
 							</div>

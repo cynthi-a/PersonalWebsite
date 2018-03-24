@@ -7,7 +7,8 @@ class Gallery extends Component {
 
   render() {
     let images = this.props.images;
-    let imagesPerRow = this.props.maxImagePerColumn;
+    images = images.splice(images.length % 4);
+    let imagesPerRow = (images.length / 4);
     let imageSubarray = [];
     let alt = this.props.alt;
 

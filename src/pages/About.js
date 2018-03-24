@@ -16,48 +16,44 @@ class About extends Component {
 		const PHOTO_SET_BONNIE = [
 			'http://bonniebon.de/images/1.jpeg',
 		  'http://bonniebon.de/images/2.jpeg',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie7.JPG',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie7.jpeg',
 		  'http://bonniebon.de/images/3.jpeg',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie6.JPG',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie6.jpeg',
 		  'http://bonniebon.de/images/4.jpeg',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie5.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie2.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie3.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie1.PNG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie4.JPG',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie5.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie2.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie3.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie1.png',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie4.jpeg',
 		];
 
 		const PHOTO_SET_KNITTING =[
-  		'https://images4-e.ravelrycache.com/uploads/Cynthia95/487758565/file_medium2.jpg',
-		  'https://images4-e.ravelrycache.com/uploads/Cynthia95/468232715/file_medium2.jpg',
-		  'https://images4-b.ravelrycache.com/uploads/Cynthia95/465980023/FullSizeRender_2_medium2.jpg',
-		  'https://images4-e.ravelrycache.com/uploads/Cynthia95/469450708/file_medium2.jpg',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting1.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting2.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting3.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting7.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting4.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting5.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting6.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting8.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami1.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami2.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami3.JPG',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting1.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting2.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting3.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting7.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting4.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting5.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting6.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting8.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami1.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami2.jpeg',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami3.jpeg',
 		];
 	const PHOTO_SET_WHISKY =[
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky1.jpg',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky2.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky6.jpg',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky8.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky3.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky15.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky9.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky10.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky11.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky12.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky13.JPG',
-		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky14.JPG',
-		// 'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky16.JPG',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky1.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky2.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky6.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky8.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky3.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky15.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky9.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky10.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky11.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky12.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky13.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky14.jpeg',
+		'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky16.jpeg',
 	];
 		return(
 			<div className="page-About">
@@ -119,7 +115,7 @@ class About extends Component {
 						Fact #1 - I love my dog
 					</h2>
 					<p>To distract from how boring I am. Her name is <a href="http://bonniebon.de" target="_blank">Bonnie</a>.</p>
-					<Gallery images={PHOTO_SET_BONNIE} maxImagePerColumn={3} alt="a white bichon frise dog" />
+					<Gallery images={PHOTO_SET_BONNIE} alt="a white bichon frise dog" />
 				</div>
 
 				<div>
@@ -128,7 +124,7 @@ class About extends Component {
 						Fact #2 - I love whisky
 					</h2>
 
-						<Gallery images={PHOTO_SET_WHISKY} maxImagePerColumn={3} alt="scottish whisky"/>
+						<Gallery images={PHOTO_SET_WHISKY} alt="scotch whisky"/>
 
 				</div>
 
@@ -136,10 +132,16 @@ class About extends Component {
 					<h2>
 						Fact #3 - I love anything handiwork-related
 					</h2>
-					<Gallery images={PHOTO_SET_KNITTING} maxImagePerColumn={4} alt="handiwork"/>
+					<p>
+						If you're a fellow granny, you can also check my Ravelry projects<span> </span>
+						<a href="https://www.ravelry.com/projects/Cynthia95" target="_blank">
+							here
+						</a>.
+					</p>
+					<Gallery images={PHOTO_SET_KNITTING} alt="handiwork"/>
 				</div>
 
-				
+
 			</div>
 		)
 	}

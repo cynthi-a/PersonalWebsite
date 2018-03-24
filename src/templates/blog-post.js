@@ -3,11 +3,9 @@ import Helmet from "react-helmet";
 import Tags from "../components/Tags";
 import Link from "gatsby-link";
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark;// data.markdownRemark holds our post data
+export default function Template({data}) {
+  const { markdownRemark } = data; // data.markdownRemark holds post data
+  const { frontmatter, html } = markdownRemark;
 
     return (
         <div className="blog-post-wrapper">

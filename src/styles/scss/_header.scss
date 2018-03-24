@@ -21,6 +21,11 @@
 }
 
 .logo {
+  
+  a:hover {
+    text-decoration: none;
+  }
+
   @include header-1;
   font-size: 2em;
   padding: 30px;
