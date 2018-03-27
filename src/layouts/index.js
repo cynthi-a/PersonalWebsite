@@ -13,7 +13,7 @@ const TemplateWrapper = ({children}) => (
       <meta name="description" content="Cynthia Lee is an IT professional based in Manchester who does full-stack web development" />
       <meta name="keywords" content="full stack, web developer, Manchester, cynthia, lee" />
       <meta name="author" content="Cynthia Lee" />
-      <link rel="canonical" href="http://cynthialee.xyz" />
+      <link rel="canonical" href="https://cynthialee.xyz" />
       <meta property="og:site_name" content="Cynthia" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />

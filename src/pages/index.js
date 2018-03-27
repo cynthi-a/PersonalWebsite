@@ -45,7 +45,7 @@ class Index extends Component {
                     I'm a German-citizenship-holding, UK-tax-paying, Chinese and Vietnamese child of globalisation
                     and generally a very conflicted being and as milennial as they come.
                 </p>
-                <div className="huiImageWrapper"><img className="huiImage" src={hui} alt="picture of me"/></div>
+                <div className="huiImageWrapper"><img className="huiImage" src={hui} alt="picture of Cynthia Lee"/></div>
             </div>
         )
     }

@@ -30,7 +30,7 @@
   	h2 {
   		margin-top: 0;
   	}
-  	height: 40vh;
+  	height: 20em;
   }
 }
 
@@ -38,7 +38,6 @@
   background-color: $color-background;
   width: fit-content;
   border-top-right-radius: 30px;
-  
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -54,12 +53,14 @@
 	grid-area: blog-content;
 
 	img {
-		max-height: 20vh;
+		max-width: 80%;
 		padding: 10px;
-		
-		@include breakpoint(medium) {
-			float: left;
-		}
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	code[class*="language-"], pre[class*="language-"] {
+		white-space: pre-wrap;
 	}
 }
 
@@ -80,3 +81,5 @@
 		 padding-left: 0;
 	}
 }
+
+

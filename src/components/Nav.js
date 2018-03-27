@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ResponsiveMenu from 'react-responsive-navbar';
-import { Route, Link } from 'react-router-dom';
+import Link from 'gatsby-link';
 import TiThMenu from 'react-icons/lib/ti/th-menu';
 import TiTimes from 'react-icons/lib/ti/times';
 
