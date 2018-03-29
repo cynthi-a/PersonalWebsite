@@ -40,8 +40,8 @@ class CV extends Component {
 								<ul>
 									<li>Graduate Software Engineer</li>
 									<li>Fullstack web development, from services to user interfaces, of various e-commerce sites (e.g. Nintento Online Store, MyProtein, Illamasqua, Probikekit)</li>
-									<li>Dealing with legacy systems</li>
 									<li>Exposure to lots of other facets of a big tech company e.g. UX and UI design, SEO</li>
+									<li>Dealing with legacy systems</li>
 									<li>Main technologies: Java, JavaScript, Sass</li>
 								</ul>
 							</div>
@@ -80,8 +80,10 @@ class CV extends Component {
 								<ul>
 									<li>MSc Software Development</li>
 									<li>One-year, practice-oriented conversion masters degree</li>
-									<li>Here is where I learnt how to program</li>
-									<li>Main taught language was Java</li>
+									<li>Main language taught was Java</li>
+									<li>Several projects using different technologies including Java, Python, PostgreSQL</li>
+									<li>Final year project: Social robotics and human-robot interaction,
+										experimental project design with robot Furhat</li>
 								</ul>
 							</div>
 							<div className="cv-value-timespan">
@@ -105,12 +107,38 @@ class CV extends Component {
 								<ul>
 									<li>BSc Business Psychology</li>
 									<li>Main modules: organisational psychology and consulting and international business</li>
-									<li>One semester abroad at <i>Shanghai University</i> in 2015</li>
 									<li>Acquired the knowledge to conduct (psychological) studies and more importantly, to question and analyse them</li>
+									<li>Final year project, New Work movement, Evaluation of agile organisational 
+									structures and their effect on recruitment processes, qualitative content analysis 
+									of conducted interviews with companies.</li>
 								</ul>
 							</div>
 							<div className="cv-value-timespan">
 								2013 - 2016
+							</div>
+						</div>
+					</div>
+
+					<div className="cv-item">
+						<div className="cv-attribute">
+								<h3>
+									Shanghai University
+								</h3>
+								<div>
+									Shanghai, China
+								</div>
+						</div>
+
+						<div className="cv-value">
+							<div className="cv-value-description">
+								<ul>
+									<li>Semester abroad</li>
+									<li>Emphasis: International Business Management</li>
+									<li>Other modules include HR management and international finance</li>
+								</ul>
+							</div>
+							<div className="cv-value-timespan">
+								Summer 2015
 							</div>
 						</div>
 					</div>
@@ -142,9 +170,10 @@ class CV extends Component {
 							<div className="cv-value-description">
 								<ul>
 									<li>Europe's biggest hackathon (550 teams)</li>
-									<li>I was part of a great team (mainly women, too) which ended up being one of the finalists</li>
 									<li>40 hours of nonstop coding</li>
-									<li>Check out the GitHub repo <a href="https://github.com/cynthi-a/GlasgowRangers">here</a></li>
+									<li>Building of a voice-controlled presentation app that works offline</li>
+									<li>I was part of a great team and our submission made it into the final</li>
+									<li>Check out the <a href="https://github.com/cynthi-a/GlasgowRangers">GitHub repo</a></li>
 									<li>Main technology: Python (Django)</li>
 								</ul>
 							</div>
@@ -154,6 +183,30 @@ class CV extends Component {
 						</div>
 					</div>
 
+					<div className="cv-item">
+						<div className="cv-attribute">
+								<h3>
+									StirHack 2017
+								</h3>
+								<div>
+									Stirling, UK
+								</div>
+						</div>
+
+						<div className="cv-value">
+							<div className="cv-value-description">
+								<ul>
+									<li>First hackathon experience</li>
+									<li>App to let students report maintenance issues at university</li>
+									<li>My team and I won the AWS category price with our submission</li>
+									<li>Main technology: Python (Django)</li>
+								</ul>
+							</div>
+							<div className="cv-value-timespan">
+								02/2017
+							</div>
+						</div>
+					</div>
 				</div>
 			
 			</div>

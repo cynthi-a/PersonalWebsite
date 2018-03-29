@@ -140,7 +140,7 @@ class About extends Component {
 					
 					<p>
 						I used to be a member of the two whisky societies at Glasgow University. 
-						I rarely never missed a meeting. 
+						I rarely missed a meeting. 
 						My preference is slightly peated. Either pure or with two drops of water.
 					</p>
 						<Gallery images={PHOTO_SET_WHISKY} alt="scotch whisky"/>
@@ -166,7 +166,7 @@ class About extends Component {
 					</h2>
 					<p>
 						Being the daughter of a restaurateur, I always had a very special relationship with food.
-						I wouldn't even say that have a very refined palate or something. I just like food.
+						I wouldn't even say that I have a very refined palate or something. I just like food.
 						One of the big reasons why I ever travel to exotic places is to taste the local cuisine.
 					</p>
 					<Gallery images={PHOTO_SET_FOOD} alt="food"/>
@@ -178,7 +178,10 @@ class About extends Component {
 						Fact #{factsNumber++} - Rick and Morty Forever
 					</h2>
 					<p>
-						It's my favourite show and sometimes I think Bonnie is Snowball.
+						It's my favourite show and sometimes I think my dog Bonnie is <span> </span>
+						<a href="http://rickandmorty.wikia.com/wiki/Snuffles" target="_blank">
+							Snowball
+						</a>.
 
 					</p>
 				</div>

@@ -5,7 +5,6 @@
 	  "blog-title"
 	  "blog-content"
 	  "tags";
-
 		  
   @include breakpoint(medium) {
 	  grid-template-columns: 3fr 1fr;
@@ -79,6 +78,10 @@
 	ul {
 		 list-style-type: none;
 		 padding-left: 0;
+
+		 a {
+		 	text-decoration: none;
+		 }
 	}
 }
 

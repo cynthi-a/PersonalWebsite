@@ -1,3 +1,5 @@
+const secrets = require('./secrets.json');
+
 module.exports = {
   siteMetadata: {
     title: 'Cynthia Lee | Web Developer',
@@ -42,7 +44,7 @@ module.exports = {
         {
           resolve: `gatsby-plugin-google-analytics`,
           options: {
-            trackingId: "UA-116230232-1",
+            trackingId: secrets.ga.trackingId,
             // Puts tracking script in the head instead of the body
             head: true,
             // Setting this parameter is optional

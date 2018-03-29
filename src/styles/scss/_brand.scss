@@ -99,6 +99,10 @@ html{
 		  }
 		}
 
+		li a {
+			text-decoration: underline;
+		}
+
 		a {
 			text-decoration: none;
 			color: $color-foreground;

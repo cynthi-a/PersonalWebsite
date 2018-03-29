@@ -15,7 +15,11 @@ class Contact extends Component {
 		return(
 			<div className="page-Contact">
 				
-				<h2 className="page-Content-start"> Get in touch - There isn't just one way of doing it</h2>
+				<div className="page-Content-start">
+					<h2>Get in touch - There isn't just one way of doing it</h2>
+				</div>
+
+
 				<div className="contact-links">
 					<div className="contact-link">
 						<a href="mailto:cynthia@cynthialee.xyz">
