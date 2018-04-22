@@ -44,7 +44,10 @@ $color-brand: #ff533d;
 	padding-bottom: $core-unit;
 	@include breakpoint(large) {
     	font-size: 26px;
-  	}
+  }
+  @media print {
+    font-size: 24px;
+  }
 }
 @mixin header-2 {
 	font-family: $primary-font;
@@ -64,10 +67,15 @@ $color-brand: #ff533d;
 		font-size: 22px;
 	}
 }
+
 @mixin regular-text {
 	font-family: $tertiary-font;
 	font-size: ($core-unit * 1.6);
 	line-height: 1.6;
+
+  @media print {
+    font-size: 12px;
+  }
 }
 html{
 	height: 100%;

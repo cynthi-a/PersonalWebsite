@@ -4,6 +4,11 @@ import Header from '../components/Header';
 import GoMortarBoard from 'react-icons/lib/go/mortar-board';
 import FaBriefcase from 'react-icons/lib/fa/briefcase';
 import TiWeatherSnow from 'react-icons/lib/ti/weather-snow';
+import MdFileDownload from 'react-icons/lib/md/file-download';
+import CvPdf from '../img/cv.pdf';
+import IoIosHome from 'react-icons/lib/io/ios-home';
+import TiMail from 'react-icons/lib/ti/mail';
+import MdPhoneIphone from 'react-icons/lib/md/phone-iphone';
 
 class CV extends Component {
 	constructor() {
@@ -14,8 +19,34 @@ class CV extends Component {
 		return(
 			
 			<div className="page-CV">
+     
+        <div className="cv-print-header">
+           <div className="cv-name">
+            <h1>Cynthia Lee</h1>
+          </div>
+          <div className="cv-contact-info">
+            <ul>
+              <li>
+                <IoIosHome /><span> </span>
+                61 Romana Square<br/>
+                WA14 5QG Altrincham
+              </li>
+      
+              <li>
+               <TiMail/><span> </span>
+                cynthia@cynthialee.xyz
+              </li>
 
-				<div className="cv-section">
+              <li>
+               <MdPhoneIphone/><span> </span>
+                (+44) 7412 841 771
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+ 				<div className="cv-section">
 					<div className="cv-section-head">
 						<h2>
 							Experience
@@ -208,10 +239,17 @@ class CV extends Component {
 						</div>
 					</div>
 				</div>
-			
+        <a href={CvPdf} download="cv_cynthia_lee">
+        <div className="cv-download">
+          <div>
+            <h2>Download PDF</h2>
+          </div>
+          <div className="cv-download-button">
+    			  <MdFileDownload />
+          </div>
+        </div>
+        </a>
 			</div>
-
-
 		)
 	}
 }

@@ -2,7 +2,7 @@
   "name": "personal-website",
   "description": "Cynthias personal website and blog",
   "version": "1.0.0",
-  "author": "Cynthia Lee <cynthia@cynthia.xyz>",
+  "author": "Cynthia Lee <cynthia@cynthialee.xyz>",
   "dependencies": {
     "gatsby": "^1.9.202",
     "gatsby-link": "^1.6.37",

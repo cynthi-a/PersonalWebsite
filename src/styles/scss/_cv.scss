@@ -1,5 +1,12 @@
+.page-CV {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+  grid-row-gap: $core-unit;
+}
+
 .cv-section {
 	display: grid;
+  page-break-after: always;
 	@include breakpoint(medium) {
 		grid-row-gap: 20px;
 	}
@@ -78,4 +85,93 @@
 	@include breakpoint(medium) {
 		justify-self: end;
 	}
+}
+
+.cv-download-button {
+  height: 50px;
+  width: 50px;
+   svg{
+    width: 100%;
+    min-height: 50px;
+    max-width: 50px;
+  }
+}
+
+.cv-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+// Below are the styles relevant to the printing layout
+  
+.cv-contact-info, .cv-name {
+  display: none;
+}
+
+.cv-print-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media print {
+
+  .cv-name {
+    display: unset;
+    h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+
+  .cv-section-head {
+    display: flex;
+  }
+
+  .cv-contact-info {
+    display: unset;
+    text-align: end;
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+  
+ul li {
+  a[href^="http://"]:after, a[href^="ftp://"]:after {
+    content: " (" attr(href) ")";
+  }
+}
+  .about-page-icon svg {
+    display: none;
+  }
+
+  body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 11px;
+    color: #333333;
+    margin-top: 2cm;
+    margin-right: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 2cm;
+  }
+
+  .header-wrapper {
+    display: none;
+  }
+
+  .component-Footer {
+    display: none;
+  }
+
+  .cv-download {
+    display: none;
+  }
+  
+  @page {
+    margin: 2cm;
+  }
 }

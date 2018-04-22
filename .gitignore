@@ -72,5 +72,7 @@ public
 *.md
 *.css
 *.map
-
+*.swp
+*.swo
+*.pdf
 # End of https://www.gitignore.io/api/node
