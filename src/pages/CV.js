@@ -28,8 +28,8 @@ class CV extends Component {
             <ul>
               <li>
                 <IoIosHome /><span> </span>
-                61 Romana Square<br/>
-                WA14 5QG Altrincham
+                8 New Bride Street, Tower A, 1404<br/>
+                M3 1NQ Manchester
               </li>
       
               <li>
@@ -59,6 +59,31 @@ class CV extends Component {
 					<div className="cv-item">
 						<div className="cv-attribute">
 								<h3>
+                  <a href="https://www.thoughtworks.com/" target="_blank">ThoughtWorks</a>
+								</h3>
+								<div>
+									Manchester, UK
+								</div>
+						</div>
+
+						<div className="cv-value">
+							<div className="cv-value-description">
+								<ul>
+									<li>Software Engineer</li>
+									<li>Consultant developer on a project-to-project basis</li>
+									<li>Showing full flexibility in terms of learning new technologies</li>
+									<li>Working in various domains</li>
+								</ul>
+							</div>
+							<div className="cv-value-timespan">
+                since 08/2018
+							</div>
+						</div>
+					</div>
+
+					<div className="cv-item">
+						<div className="cv-attribute">
+								<h3>
 									<a href="https://www.thehutgroup.com/" target="_blank">The Hut Group</a>
 								</h3>
 								<div>
@@ -72,12 +97,13 @@ class CV extends Component {
 									<li>Graduate Software Engineer</li>
 									<li>Fullstack web development, from services to user interfaces, of various e-commerce sites (e.g. Nintento Online Store, MyProtein, Illamasqua, Probikekit)</li>
 									<li>Exposure to lots of other facets of a big tech company e.g. UX and UI design, SEO</li>
+									<li>Representing my team at weekly meetings with the business side of the company</li>
 									<li>Dealing with legacy systems</li>
 									<li>Main technologies: Java, JavaScript, Sass</li>
 								</ul>
 							</div>
 							<div className="cv-value-timespan">
-								since 10/2017
+                10/2017 - 07/2018
 							</div>
 						</div>
 					</div>
