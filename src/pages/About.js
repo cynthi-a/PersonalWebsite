@@ -117,37 +117,42 @@ class About extends Component {
 					</div>
 				</div>
 
+        <div>
+          <h1>Pictures say more than words</h1>
+          
+          <p>
+            Below are some picture galleries that are pretty good at giving an approximation of who I am.
+          </p>
+        </div>
 
-				<h1>Pictures say more than words</h1>
-				
-				<p>
-					Below are some picture galleries that are pretty good at giving an approximation of who I am.
-				</p>
-
-				<div>
-					<h2>
-						Fact #{factsNumber++} - I love my dog
-					</h2>
-					<p>To distract from how boring I am. Her name is <a href="http://bonniebon.de" target="_blank">Bonnie</a>.</p>
-					<Gallery images={PHOTO_SET_BONNIE} alt="a white bichon frise dog" />
+				<div className="facts-set">
+          <span className="facts-description">
+            <h2>
+              Fact #{factsNumber++} - I love my dog
+            </h2>
+            <p>To distract from how boring I am. Her name is <a href="http://bonniebon.de" target="_blank">Bonnie</a>.</p>
+          </span>
+					<Gallery className="facts-gallery" images={PHOTO_SET_BONNIE} alt="a white bichon frise dog" />
 				</div>
 
-				<div>
-
-					<h2>
-						Fact #{factsNumber++} - I love whisky
-					</h2>
+				<div className="facts-set">
+          <span className="facts-description">
+            <h2>
+              Fact #{factsNumber++} - I love whisky
+            </h2>
+            <p>
+              I used to be a member of the two whisky societies at Glasgow University. 
+              I rarely missed a meeting. 
+              My preference is slightly peated. Either pure or with two drops of water.
+            </p>
+          </span>
 					
-					<p>
-						I used to be a member of the two whisky societies at Glasgow University. 
-						I rarely missed a meeting. 
-						My preference is slightly peated. Either pure or with two drops of water.
-					</p>
-						<Gallery images={PHOTO_SET_WHISKY} alt="scotch whisky"/>
+          <Gallery images={PHOTO_SET_WHISKY} alt="scotch whisky"/>
 
 				</div>
 
-				<div id="fact-3">
+				<div className="facts-set">
+          <span className="facts-description">
 					<h2>
 						Fact #{factsNumber++} - I love anything handiwork-related
 					</h2>
@@ -157,21 +162,23 @@ class About extends Component {
 							here
 						</a>.
 					</p>
+        </span>
 					<Gallery images={PHOTO_SET_KNITTING} alt="handiwork"/>
 				</div>
 
-				<div>
-					<h2>
-						Fact #{factsNumber++} - I'm a foodie
-					</h2>
-					<p>
-						Being the daughter of a restaurateur, I always had a very special relationship with food.
-						I wouldn't even say that I have a very refined palate or something. I just like food.
-						One of the big reasons why I ever travel to exotic places is to taste the local cuisine.
-					</p>
+				<div className="facts-set">
+          <span className="facts-description">
+            <h2>
+              Fact #{factsNumber++} - I'm a foodie
+            </h2>
+            <p>
+              Being the daughter of a restaurateur, I always had a very special relationship with food.
+              I wouldn't even say that I have a very refined palate or something. I just like food.
+              One of the big reasons why I ever travel to exotic places is to taste the local cuisine.
+            </p>
+          </span>
 					<Gallery images={PHOTO_SET_FOOD} alt="food"/>
 				</div>
-
 
 				<div>
 					<h2>
