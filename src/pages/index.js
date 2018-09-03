@@ -27,23 +27,21 @@ class Index extends Component {
                         I spent the best year of my life so far in Glasgow.
                     </p>
                     <p>
-                        Fast forward to today - A bit more than a year of programming experience later,
-                        in 2017, a company took a pity on me and employed me as a web developer.
-                        Ever since, I picked up forntend technologies, despite not having any previous
-                        training in it, since I only did backend up until that point.
-                        Now I enjoy forntend more than I initially expected.
-                        Wanting to pick up the JavaScript framework React 
-                        led me to experiement and build my own website.
+                        Fast forward to today - After having spent some exciting months as a graduate software engineer
+                        at <a href="https://www.thg.com/" target="_blank">The Hut Group</a>, I am now
+                        employed at <a href="https://www.thoughtworks.com/" target="_blank">ThoughtWorks</a><span>. </span>
+                        Here, I am given the opportunity to learn more and more about
+                        good software engineering while also meeting loads of interesting people.
                     </p>
                     <p>
                         I am not quite sure what this site is supposed to be or show but mainly,
-                        it's an excellent learning experience for me.
+                        building it was an excellent learning experience for me.
                     </p>
                 </div>
                 <p className="self-description">
                     It's tricky to describe oneself in a single sentence but here goes:
                     I'm a German-citizenship-holding, UK-tax-paying, Chinese and Vietnamese child of globalisation
-                    and generally a very conflicted being and as milennial as they come.
+                    and generally a very conflicted being and as millennial as they come.
                 </p>
                 <div className="huiImageWrapper"><img className="huiImage" src={hui} alt="picture of Cynthia Lee"/></div>
             </div>
