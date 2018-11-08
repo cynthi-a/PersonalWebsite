@@ -14,10 +14,6 @@ class About extends Component {
 
 	render() {
 		const PHOTO_SET_BONNIE = [
-			'http://bonniebon.de/images/1.jpeg',
-		  'http://bonniebon.de/images/2.jpeg',
-		  'http://bonniebon.de/images/3.jpeg',
-		  'http://bonniebon.de/images/4.jpeg',
 		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie7.JPG',
 		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie6.JPG',
 		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie5.JPG',
@@ -25,6 +21,9 @@ class About extends Component {
 		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie3.JPG',
 		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie1.JPG',
 		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie4.JPG',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie8.JPG',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie9.JPG',
+		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie10.JPG',
 		];
 
 		const PHOTO_SET_KNITTING =[
@@ -83,7 +82,7 @@ class About extends Component {
 								Age
 							</h3>
 							<div className="fact-value">
-								22
+								23
 							</div>
 						</div>
 
