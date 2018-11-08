@@ -129,7 +129,7 @@ class About extends Component {
             <h2>
               Fact #{factsNumber++} - I love my dog
             </h2>
-            <p>To distract from how boring I am. Her name is <a href="http://bonniebon.de" target="_blank">Bonnie</a>.</p>
+            <p>To distract from how boring I am. Her name is Bonnie.</p>
           </span>
 					<Gallery className="facts-gallery" images={PHOTO_SET_BONNIE} alt="a white bichon frise dog" />
 				</div>
