@@ -70,7 +70,7 @@ class CV extends Component {
 							<div className="cv-value-description">
 								<ul>
 									<li>Software Engineer</li>
-									<li>Consultant developer on a project-to-project basis</li>
+									<li>Consulting and advisory</li>
 									<li>Showing full flexibility in terms of learning new technologies</li>
 									<li>Working in various domains</li>
 								</ul>
@@ -210,6 +210,32 @@ class CV extends Component {
 						</h2>
 						<div className="about-page-icon">
 							<TiWeatherSnow />
+						</div>
+					</div>
+
+					<div className="cv-item">
+						<div className="cv-attribute">
+								<h3>
+                  HackManchester 2018
+								</h3>
+								<div>
+                  Manchester, UK
+								</div>
+						</div>
+
+						<div className="cv-value">
+							<div className="cv-value-description">
+								<ul>
+									<li>Winner of Best in Show</li>
+									<li>First all-women team to win the prize</li>
+									<li>25 hours of coding</li>
+									<li>Kicking ass with my fellow team mates Luce Carter, Sal Freudenberg and Clare Sudberry</li>
+									<li>Main technologies: .Net Core, JavaScript</li>
+								</ul>
+							</div>
+							<div className="cv-value-timespan">
+								10/2018
+							</div>
 						</div>
 					</div>
 
