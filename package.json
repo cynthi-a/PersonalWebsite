@@ -15,7 +15,8 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "react-responsive-navbar": "^1.0.11",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "sass": "^1.13.0"
   },
   "keywords": [
     "gatsby"
@@ -24,8 +25,9 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "build-css": "sass --watch src/styles/scss/style.scss:src/styles/style.css --sourcemap",
+    "build-css": "sass --watch src/styles/scss/style.scss:src/styles/style.css",
     "develop": "concurrently --kill-others-on-fail \"yarn build-css\" \"gatsby develop\"",
+    "dev": "yarn develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
