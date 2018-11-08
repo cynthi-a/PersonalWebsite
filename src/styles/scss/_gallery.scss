@@ -18,6 +18,5 @@
 
   @include breakpoint(medium) {
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-  
   }
 }
