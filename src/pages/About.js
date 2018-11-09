@@ -1,4 +1,5 @@
 import '../styles/style.css';
+import Helmet from 'react-helmet'
 import React, { Component } from 'react';
 import Gallery from '../components/Gallery';
 import GoMortarBoard from 'react-icons/lib/go/mortar-board';
@@ -71,6 +72,11 @@ class About extends Component {
 
 		return(
 			<div className="page-About">
+
+        <Helmet>
+          <title>Cynthia Lee | About</title>
+        </Helmet>
+        
 				<div className="quick-facts about-section-item">
 					<h1>
 						Quick Facts

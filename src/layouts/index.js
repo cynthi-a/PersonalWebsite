@@ -9,7 +9,7 @@ import "prismjs/themes/prism-solarizedlight.css";
 const TemplateWrapper = ({children}) => (
   <div className="template-wrapper">
     <Helmet>
-      <title>Cynthia Lee | Web Developer</title>
+      <title>Cynthia Lee | Software Developer</title>
       <meta name="description" content="Cynthia Lee is an IT professional and ThoughtWorker based in Manchester.
       She holds a degree in business psychology but wanting to pursue a career in technology, she did a 
       conversion masters in software development." />

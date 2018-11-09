@@ -31,6 +31,7 @@ export default function Template({data}) {
     return (
         <div className="blog-post-wrapper">
             <Helmet>
+              <title>{frontmatter.title}</title>
               <meta title={`Cynthia's Blog - ${frontmatter.title}`} />
             </Helmet>
 

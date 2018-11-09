@@ -5,6 +5,7 @@ import xing from '../img/xing.png';
 import TiSocialFacebook from 'react-icons/lib/ti/social-facebook';
 import TiMail from 'react-icons/lib/ti/mail';
 import TiSocialLinkedin from 'react-icons/lib/ti/social-linkedin';
+import Helmet from 'react-helmet'
 
 class Contact extends Component {
 	constructor() {
@@ -14,6 +15,9 @@ class Contact extends Component {
 	render() {
 		return(
 			<div className="page-Contact">
+        <Helmet>
+          <title>Cynthia Lee | Contact</title>
+        </Helmet>
 				
 				<div className="page-Content-start">
 					<h2>Get in touch - There isn't just one way of doing it</h2>

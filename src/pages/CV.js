@@ -9,6 +9,7 @@ import CvPdf from '../img/cv.pdf';
 import IoIosHome from 'react-icons/lib/io/ios-home';
 import TiMail from 'react-icons/lib/ti/mail';
 import MdPhoneIphone from 'react-icons/lib/md/phone-iphone';
+import Helmet from 'react-helmet'
 
 class CV extends Component {
 	constructor() {
@@ -19,6 +20,10 @@ class CV extends Component {
 		return(
 			
 			<div className="page-CV">
+        
+        <Helmet>
+          <title>Cynthia Lee | CV</title>
+        </Helmet>
      
         <div className="cv-print-header">
            <div className="cv-name">
