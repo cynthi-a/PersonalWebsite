@@ -10,10 +10,10 @@ const TemplateWrapper = ({children}) => (
   <div className="template-wrapper">
     <Helmet>
       <title>Cynthia Lee | Web Developer</title>
-      <meta name="description" content="Cynthia Lee is an IT professional based in Manchester who does full-stack web development.
+      <meta name="description" content="Cynthia Lee is an IT professional and ThoughtWorker based in Manchester.
       She holds a degree in business psychology but wanting to pursue a career in technology, she did a 
       conversion masters in software development." />
-      <meta name="keywords" content="full stack, web developer, Manchester, cynthia, lee" />
+      <meta name="keywords" content="web developer, Manchester, woman in tech, software developer, thoughtworks, cynthia, lee" />
       <meta name="author" content="Cynthia Lee" />
       <link rel="canonical" href="https://cynthialee.xyz" />
       <meta property="og:site_name" content="Cynthia" />
