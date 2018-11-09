@@ -16,6 +16,10 @@
 	grid-row-start: 2;
 	-webkit-logical-width: -webkit-fill-available;
 	width: -webkit-stretch;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .header-wrapper {
