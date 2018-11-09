@@ -231,10 +231,10 @@ class CV extends Component {
 						<div className="cv-value">
 							<div className="cv-value-description">
 								<ul>
-									<li>Winner of Best in Show</li>
+									<li>Winner of the title challenge, Best in Show</li>
 									<li>First all-women team to win the prize</li>
 									<li>25 hours of coding</li>
-									<li>Kicking ass with my fellow team mates Luce Carter, Sal Freudenberg and Clare Sudberry</li>
+									<li>Product: IoT-buttons-controlled "time machine"</li>
 									<li>Main technologies: .Net Core, JavaScript</li>
 								</ul>
 							</div>
