@@ -6,7 +6,6 @@ import GoMortarBoard from 'react-icons/lib/go/mortar-board';
 import FaBriefcase from 'react-icons/lib/fa/briefcase';
 import TiWeatherSnow from 'react-icons/lib/ti/weather-snow';
 
-
 class About extends Component {
 
 	constructor() {
@@ -14,58 +13,62 @@ class About extends Component {
 	}
 
 	render() {
+    const photos_bucket_endpoint = "https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/"
+
+
 		const PHOTO_SET_BONNIE = [
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie7.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie6.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie5.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie2.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie3.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie1.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie4.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie8.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie9.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/bonnie10.JPG',
+		  `${photos_bucket_endpoint}bonnie7.JPG`,
+		  `${photos_bucket_endpoint}bonnie6.JPG`,
+		  `${photos_bucket_endpoint}bonnie5.JPG`,
+		  `${photos_bucket_endpoint}bonnie2.JPG`,
+		  `${photos_bucket_endpoint}bonnie3.JPG`,
+		  `${photos_bucket_endpoint}bonnie1.JPG`,
+		  `${photos_bucket_endpoint}bonnie4.JPG`,
+		  `${photos_bucket_endpoint}bonnie8.JPG`,
+		  `${photos_bucket_endpoint}bonnie9.JPG`,
+		  `${photos_bucket_endpoint}bonnie10.JPG`,
+		  `${photos_bucket_endpoint}bonnie11.JPG`,
 		];
 
 		const PHOTO_SET_KNITTING =[
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting1.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting2.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting3.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting7.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting4.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting5.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting6.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/knitting8.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami1.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami2.JPG',
-		  'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/origami3.JPG',
+		  `${photos_bucket_endpoint}knitting1.JPG`,
+		  `${photos_bucket_endpoint}knitting2.JPG`,
+		  `${photos_bucket_endpoint}knitting3.JPG`,
+		  `${photos_bucket_endpoint}knitting7.JPG`,
+		  `${photos_bucket_endpoint}knitting4.JPG`,
+		  `${photos_bucket_endpoint}knitting5.JPG`,
+		  `${photos_bucket_endpoint}knitting6.JPG`,
+		  `${photos_bucket_endpoint}knitting8.JPG`,
+		  `${photos_bucket_endpoint}origami1.JPG`,
+		  `${photos_bucket_endpoint}origami2.JPG`,
+		  `${photos_bucket_endpoint}origami3.JPG`,
 		];
 
 		const PHOTO_SET_WHISKY =[
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky1.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky2.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky6.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky8.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky3.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky15.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky9.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky10.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky11.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky12.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky13.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky14.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/whisky16.JPG',
+			`${photos_bucket_endpoint}whisky1.JPG`,
+			`${photos_bucket_endpoint}whisky2.JPG`,
+			`${photos_bucket_endpoint}whisky6.JPG`,
+			`${photos_bucket_endpoint}whisky8.JPG`,
+			`${photos_bucket_endpoint}whisky3.JPG`,
+			`${photos_bucket_endpoint}whisky15.JPG`,
+			`${photos_bucket_endpoint}whisky9.JPG`,
+			`${photos_bucket_endpoint}whisky10.JPG`,
+			`${photos_bucket_endpoint}whisky11.JPG`,
+			`${photos_bucket_endpoint}whisky12.JPG`,
+			`${photos_bucket_endpoint}whisky13.JPG`,
+			`${photos_bucket_endpoint}whisky14.JPG`,
+			`${photos_bucket_endpoint}whisky16.JPG`,
 		];
 
 		const PHOTO_SET_FOOD =[
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/food1.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/food2.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/food3.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/food4.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/food5.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/food6.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/food7.JPG',
-			'https://s3.eu-west-2.amazonaws.com/cynthialeesblog/about-pictures/food8.JPG',
+			`${photos_bucket_endpoint}food1.JPG`,
+			`${photos_bucket_endpoint}food2.JPG`,
+			`${photos_bucket_endpoint}food3.JPG`,
+			`${photos_bucket_endpoint}food4.JPG`,
+			`${photos_bucket_endpoint}food5.JPG`,
+			`${photos_bucket_endpoint}food6.JPG`,
+			`${photos_bucket_endpoint}food7.JPG`,
+			`${photos_bucket_endpoint}food8.JPG`,
 		];
 
 		let factsNumber = 1;
@@ -85,10 +88,10 @@ class About extends Component {
 
 						<div className="fact">
 							<h3 className="fact-attribute">
-								Age
+                Spaces or tabs?
 							</h3>
 							<div className="fact-value">
-								23
+                Tabs
 							</div>
 						</div>
 
