@@ -13,8 +13,8 @@ class Nav extends Component {
   render() {
     return (
       <ResponsiveMenu
-        menuOpenButton={<TiThMenu />}
-        menuCloseButton={<TiTimes />}
+        menuOpenButton={ <TiThMenu /> }
+        menuCloseButton={ <TiTimes /> }
         changeMenuOn="500px"
         largeMenuClassName="large-menu"
         smallMenuClassName="small-menu"
