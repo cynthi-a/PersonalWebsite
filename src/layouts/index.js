@@ -21,6 +21,7 @@ const TemplateWrapper = ({children}) => (
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Cynthia Lee - Software Developer" />
       <meta property="og:url" content="http://cynthialee.xyz" />
+      <meta name="google-site-verification" content="YOe1PPJrXiSLQ4NT6XHmbwxa1HR28LQmhqCOE3IvVE0" />
       <link rel="icon" href={Favicon} type="image/png" />
     </Helmet>
     
