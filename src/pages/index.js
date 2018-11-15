@@ -13,7 +13,7 @@ class Index extends Component {
                 <div className="focus-article-body">
                     <h1>Hello, World!</h1>
                     <p>
-                        I am a 23-year-old IT professional based in Manchester, UK.
+                        I am an IT professional based in Manchester, UK.
                         Originally, I am from Germany (Ja, wirklich!). I was
                         born and raised in the most beautiful city in the world, Hamburg.
                         Two years ago, I came to Scotland to pursue my 
