@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "description": "Cynthias personal website and blog",
+  "description": "Cynthia's personal website and blog",
   "version": "1.0.0",
   "author": "Cynthia Lee <cynthia@cynthialee.xyz>",
   "dependencies": {
@@ -24,9 +24,9 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build \"cp -r src/static/ public/\"",
     "build-css": "sass --watch src/styles/scss/style.scss:src/styles/style.css",
-    "develop": "concurrently --kill-others-on-fail \"yarn build-css\" \"gatsby develop\"",
+    "develop": "concurrently --kill-others-on-fail \"yarn build-css\" \"gatsby develop\" \"cp -r src/static/ public/\"",
     "dev": "yarn develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
