@@ -78,3 +78,6 @@ public
 # End of https://www.gitignore.io/api/node
 #
 *.DS_Store
+.DS_Store
+
+*/static/
