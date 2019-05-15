@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Footer from './Footer'
+import Header from './Header'
 import Favicon from '../img/favicon.png'
 import "prismjs/themes/prism-solarizedlight.css";
 
@@ -37,7 +37,7 @@ const TemplateWrapper = ({children}) => (
           paddingTop: 0,
       }}
     >
-      {children()}
+      {children}
     </div>
 
     <div className="footer-wrapper">

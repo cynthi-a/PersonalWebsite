@@ -1,35 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "gatsby-link";
+import { graphql } from 'gatsby';
+import TemplateWrapper from "../components/default";
 
-const Tags = ({ pathContext, data }) => {
-  const { tag } = pathContext;
+const Tags = ({ pageContext, data }) => {
+  const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`;
+    } tagged with "${tag}"`;
 
   return (
-    <div>
-      <h1>{tagHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { path, title } = node.frontmatter;
-          return (
-            <li key={path}>
-              <Link to={path}>{title}</Link>
-            </li>
-          );
-        })}
-      </ul>
+    <TemplateWrapper>
+      <div>
+        <h1>{tagHeader}</h1>
+        <ul>
+          {edges.map(({ node }) => {
+            const { path, title } = node.frontmatter;
+            return (
+              <li key={path}>
+                <Link to={path}>{title}</Link>
+              </li>
+            );
+          })}
+        </ul>
 
-      <Link to="/tagspage">All tags</Link>
-    </div>
+        <Link to="/tagspage">All tags</Link>
+      </div>
+    </TemplateWrapper>
   );
 };
 
 Tags.propTypes = {
-  pathContext: PropTypes.shape({
+  pageContext: PropTypes.shape({
     tag: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({

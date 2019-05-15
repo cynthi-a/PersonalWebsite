@@ -1,6 +1,6 @@
 import '../styles/style.css';
+import TemplateWrapper from '../components/default';
 import React, { Component } from 'react';
-import Header from '../components/Header';
 import GoMortarBoard from 'react-icons/lib/go/mortar-board';
 import FaBriefcase from 'react-icons/lib/fa/briefcase';
 import TiWeatherSnow from 'react-icons/lib/ti/weather-snow';
@@ -12,14 +12,14 @@ import MdPhoneIphone from 'react-icons/lib/md/phone-iphone';
 import Helmet from 'react-helmet'
 
 class CV extends Component {
-	constructor() {
-		super();
-	}
 
 	render() {
 		return(
+			<TemplateWrapper>
+
 			
-			<div className="page-CV">
+			
+		<div className="page-CV">
         
         <Helmet>
           <title>Cynthia Lee | CV</title>
@@ -64,7 +64,7 @@ class CV extends Component {
 					<div className="cv-item">
 						<div className="cv-attribute">
 								<h3>
-                  <a href="https://www.thoughtworks.com/" target="_blank">ThoughtWorks</a>
+                  <a href="https://www.thoughtworks.com/" target="_blank" rel="noopener noreferrer">ThoughtWorks</a>
 								</h3>
 								<div>
 									Manchester, UK
@@ -89,7 +89,7 @@ class CV extends Component {
 					<div className="cv-item">
 						<div className="cv-attribute">
 								<h3>
-									<a href="https://www.thehutgroup.com/" target="_blank">The Hut Group</a>
+									<a href="https://www.thehutgroup.com/" target="_blank" rel="noopener noreferrer">The Hut Group</a>
 								</h3>
 								<div>
 									Northwich, UK
@@ -307,6 +307,7 @@ class CV extends Component {
         </div>
         </a>
 			</div>
+			</TemplateWrapper>
 		)
 	}
 }

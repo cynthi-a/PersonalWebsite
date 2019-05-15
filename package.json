@@ -1,21 +1,28 @@
 {
   "name": "personal-website",
   "description": "Cynthia's personal website and blog",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cynthi-a/PersonalWebsite.git"
+  },
   "version": "1.0.0",
   "author": "Cynthia Lee <cynthia@cynthialee.xyz>",
   "dependencies": {
     "emotion": "^9.2.12",
-    "gatsby": "^2.2.9",
-    "gatsby-link": "^1.6.46",
+    "gatsby": "^2.4.6",
+    "gatsby-link": "^2.1.1",
     "gatsby-plugin-catch-links": "^1.0.26",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-remark": "^1.7.44",
+    "history": "^4.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-responsive-navbar": "^1.0.11",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^5.0.0",
     "sass": "^1.14.3"
   },
   "keywords": [

@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 class Gallery extends Component {
 
-	constructor() {
-		super();
-	}
-
   render() {
     let images = this.props.images;
     images = images.splice(images.length % 4);

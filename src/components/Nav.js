@@ -6,10 +6,6 @@ import TiTimes from 'react-icons/lib/ti/times';
 
 class Nav extends Component {
 
-	constructor() {
-		super();
-	}
-
   render() {
     return (
       <ResponsiveMenu

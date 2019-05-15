@@ -84,6 +84,10 @@ html{
 
 		#___gatsby {
 			height: 100%;
+
+			> div {
+				height: 100%;
+			}
 		}
 
 		h1 {

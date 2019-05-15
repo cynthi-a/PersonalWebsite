@@ -1,14 +1,13 @@
 import '../styles/style.css';
 import React, { Component } from 'react';
 import hui from '../img/profile_picture.jpg'
+import TemplateWrapper from '../components/default';
 
 class Index extends Component {
-    constructor() {
-        super();
-    }
 
     render() {
         return(
+            <TemplateWrapper>
             <div className="page-index">
                 <div className="focus-article-body">
                     <h1>Hello, World!</h1>
@@ -28,8 +27,8 @@ class Index extends Component {
                     </p>
                     <p>
                         Fast forward to today - After having spent some exciting months as a graduate software engineer
-                        at <a href="https://www.thg.com/" target="_blank">The Hut Group</a>, I am now
-                        employed at <a href="https://www.thoughtworks.com/" target="_blank">ThoughtWorks</a><span>. </span>
+                        at <a href="https://www.thg.com/" target="_blank" rel="noopener noreferrer">The Hut Group</a>, I am now
+                        employed at <a href="https://www.thoughtworks.com/" target="_blank" rel="noopener noreferrer">ThoughtWorks</a><span>. </span>
                         Here, I am given the opportunity to learn more and more about
                         good software engineering while also meeting loads of interesting people.
                     </p>
@@ -43,8 +42,9 @@ class Index extends Component {
                     I'm a German-citizenship-holding, UK-tax-paying, Chinese and Vietnamese child of globalisation
                     and generally a very conflicted being and as millennial as they come.
                 </p>
-                <div className="huiImageWrapper"><img className="huiImage" src={hui} alt="picture of Cynthia Lee"/></div>
+                <div className="huiImageWrapper"><img className="huiImage" src={hui} alt="portait of Cynthia Lee"/></div>
             </div>
+            </TemplateWrapper>
         )
     }
 }

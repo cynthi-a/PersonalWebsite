@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-import Link from "gatsby-link";
+import React from 'react';
 import Tags from "../components/Tags";
+import { graphql } from 'gatsby';
+import TemplateWrapper from '../components/default';
 
-export default function TagsPage({data}) {
-  const {group: tags} = data.allMarkdownRemark;
-  return(
-    <Tags tags={tags}/>
+export default function TagsPage({ data }) {
+  const { group: tags } = data.allMarkdownRemark;
+  return (
+    <TemplateWrapper>
+      <Tags tags={tags} />
+    </TemplateWrapper>
   )
 }
 

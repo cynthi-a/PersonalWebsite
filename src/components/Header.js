@@ -5,10 +5,6 @@ import Nav from "../components/Nav";
 
 class Header extends Component {
 
-	constructor() {
-		super();
-	}
-
 	render() {
 		return(
     	  <div>

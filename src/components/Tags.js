@@ -1,37 +1,27 @@
 import React, { Component } from 'react';
-import PropTypes from "prop-types";
 
-// Utilities
-import kebabCase from "lodash/kebabcase";
-
-// Components
-import Helmet from "react-helmet";
 import Link from "gatsby-link";
 
 class Tags extends Component {
 
-  constructor() {
-    super();
-  }
-
   render() {
-    return(
+    return (
       <div className="component-tags">
         <div className="component-tags-header">
-          <h1>All Blog Tags</h1>
+          <h1>Tags</h1>
         </div>
-      <ul>
-      {this.props.tags.map(
-        (tag, index) => (
-            <li key={index}>
-              <Link to={`/tags/${(tag.fieldValue)}/`}>
-                # {tag.fieldValue} ({tag.totalCount})
+        <ul>
+          {this.props.tags.map(
+            (tag, index) => (
+              <li key={index}>
+                <Link to={`/tags/${(tag.fieldValue)}/`}>
+                  # {tag.fieldValue} ({tag.totalCount})
               </Link>
-            </li>
-          ) 
-        )
-      }
-      </ul>
+              </li>
+            )
+          )
+          }
+        </ul>
       </div>
     )
   }

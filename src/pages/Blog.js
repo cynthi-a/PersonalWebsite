@@ -1,16 +1,17 @@
 import React from "react";
 import Link from "gatsby-link";
-import Helmet from "react-helmet";
 import Tags from "../components/Tags";
+import { graphql } from 'gatsby';
+import TemplateWrapper from '../components/default';
 
 export default function Blog({data}) {
     const {edges: posts} = data.posts;
     const {group: tags} = data.tags;
     return (
+      <TemplateWrapper>
         <div className="blog-posts-wrapper">
           <div className="blog-post">
             {posts
-                .filter(post => post.node.frontmatter.title.length > 0)
                 .map(({node: post}) => {
                     return (
                         <div className="blog-post-preview" key={post.id}>
@@ -30,6 +31,7 @@ export default function Blog({data}) {
             <Tags tags={tags}/>
           </div>
         </div>
+        </TemplateWrapper>
     );
 }
 

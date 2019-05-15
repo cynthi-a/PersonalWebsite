@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
 
-import Nav from "../components/Nav";
-
 class Footer extends Component {
-
-	constructor() {
-		super();
-	}
 
 	render() {
 		return(
@@ -20,7 +14,6 @@ class Footer extends Component {
 		  	  
 		    </footer>
 		   </div>
-	    
 		)
 	}
 }
