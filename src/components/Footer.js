@@ -9,7 +9,7 @@ class Footer extends Component {
 		    <footer>
 		    
 		      <span className="footer-content">
-	      		&#169; Cynthia Lee 2018
+	      		&#169; Cynthia Lee 2019
 		      </span>
 		  	  
 		    </footer>
