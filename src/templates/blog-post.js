@@ -6,7 +6,7 @@ import FaTwitter from 'react-icons/lib/fa/twitter';
 import FaFacebook from 'react-icons/lib/fa/facebook';
 import FaEnvelope from 'react-icons/lib/fa/envelope';
 import FaLinkedin from 'react-icons/lib/fa/linkedin';
-import { ShareButtonCircle, ShareBlockStandard } from 'react-custom-share';
+import { ShareButtonRectangle, ShareBlockStandard } from 'react-custom-share';
 import { graphql } from 'gatsby';
 import TemplateWrapper from "../components/default";
 
@@ -16,7 +16,7 @@ export default function Template({ data }) {
 
   const shareBlockProps = {
     url: 'https://cynthialee.xyz' + frontmatter.path,
-    button: ShareButtonCircle,
+    button: ShareButtonRectangle,
     buttons: [
       { network: 'Twitter', icon: FaTwitter },
       { network: 'Facebook', icon: FaFacebook },
@@ -49,7 +49,7 @@ export default function Template({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
 
-        <ShareBlockStandard {...shareBlockProps} />
+        <ShareBlockStandard className="blog-post-share-blog" {...shareBlockProps} />
 
         <div className="blog-post-tags">
           <h2>Tags</h2>
