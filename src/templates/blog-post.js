@@ -29,46 +29,45 @@ export default function Template({ data }) {
 
   return (
     <TemplateWrapper>
-    <div className="blog-post-wrapper">
-      <Helmet>
-        <title>{frontmatter.title}</title>
-        <meta title={`Cynthia's Blog - ${frontmatter.title}`} />
-      </Helmet>
+      <div className="blog-post-wrapper">
+        <Helmet>
+          <title>{frontmatter.title}</title>
+          <meta title={`Cynthia's Blog - ${frontmatter.title}`} />
+        </Helmet>
 
-      <div className="blog-post-post">
+        <div className="blog-post-post">
 
-        <div className="blog-post-header" style={{ backgroundImage: `url(${frontmatter.featureimage})` }}>
-          <div className="blog-post-header-title">
-            <h1>{frontmatter.title}</h1>
-            <div className="blog-post-date">{frontmatter.date}</div>
+          <div className="blog-post-header" style={{ backgroundImage: `url(${frontmatter.featureimage})` }}>
+            <div className="blog-post-header-title">
+              <h1>{frontmatter.title}</h1>
+              <div className="blog-post-date">{frontmatter.date}</div>
+            </div>
+          </div>
+
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+
+          <ShareBlockStandard className="blog-post-share-blog" {...shareBlockProps} />
+
+          <div className="blog-post-tags">
+            <h2>Tags</h2>
+            <ul>
+              {frontmatter.tags.map(
+                (tag, index) => (
+                  <li key={index}>
+                    <Link to={`/tags/${(tag)}/`}>
+                      # {tag}
+                    </Link>
+                  </li>
+                )
+              )
+              }
+            </ul>
           </div>
         </div>
-
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-
-        <ShareBlockStandard className="blog-post-share-blog" {...shareBlockProps} />
-
-        <div className="blog-post-tags">
-          <h2>Tags</h2>
-          <ul>
-
-            {frontmatter.tags.map(
-              (tag, index) => (
-                <li key={index}>
-                  <Link to={`/tags/${(tag)}/`}>
-                    # {tag}
-                  </Link>
-                </li>
-              )
-            )
-            }
-          </ul>
-        </div>
       </div>
-    </div>
     </TemplateWrapper>
   );
 }

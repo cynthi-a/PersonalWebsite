@@ -48,7 +48,7 @@ const TemplateWrapper = ({children}) => (
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.object,
 }
 
 export default TemplateWrapper;
