@@ -8,7 +8,6 @@ import MdFileDownload from 'react-icons/lib/md/file-download';
 import CvPdf from '../img/cv.pdf';
 import IoIosHome from 'react-icons/lib/io/ios-home';
 import TiMail from 'react-icons/lib/ti/mail';
-import MdPhoneIphone from 'react-icons/lib/md/phone-iphone';
 import Helmet from 'react-helmet'
 
 class CV extends Component {
@@ -31,18 +30,12 @@ class CV extends Component {
 							<ul>
 								<li>
 									<IoIosHome /><span> </span>
-									20 Zeus House, 16-30 Provost Street<br />
-									N1 7NG London
+								E14 9BF London
               </li>
 
 								<li>
 									<TiMail /><span> </span>
 									cynthia.htlee@gmail.com
-              </li>
-
-								<li>
-									<MdPhoneIphone /><span> </span>
-									(+44) 7412 841 771
               </li>
 
 							</ul>
@@ -56,6 +49,31 @@ class CV extends Component {
 						</h2>
 							<div className="about-page-icon">
 								<FaBriefcase />
+							</div>
+						</div>
+
+						<div className="cv-item">
+							<div className="cv-attribute">
+								<h3>
+									<a href="https://www.askattest.com/" target="_blank" rel="noopener noreferrer">Attest</a>
+								</h3>
+								<div>
+									London, UK
+								</div>
+							</div>
+
+							<div className="cv-value">
+								<div className="cv-value-description">
+									<ul>
+										<li>Backend Engineer on the Platform squad</li>
+										<li>Automating, and optimizing product critical deployments in AWS</li>
+										<li>Supporting my squad to develop product thinking/culture</li>
+										<li>Improving developer workflow, increasing scalability, and optimizing speed</li>
+									</ul>
+								</div>
+								<div className="cv-value-timespan">
+									since 08/2019
+							</div>
 							</div>
 						</div>
 
@@ -79,7 +97,7 @@ class CV extends Component {
 									</ul>
 								</div>
 								<div className="cv-value-timespan">
-									since 08/2018
+									08/2018 - 07/2019
 							</div>
 							</div>
 						</div>
