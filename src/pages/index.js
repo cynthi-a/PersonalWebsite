@@ -18,30 +18,31 @@ class Index extends Component {
                             Two years ago, I came to Scotland to pursue my
                         <span> </span><span className="line-through">whisky tasting career</span><span> </span>
                             masters degree in Software Development at the University of Glasgow.
-                    </p>
+                        </p>
+
                         <p>
-                            So far, deciding that I want to pursue a career in IT instead of
-                            business psychology, which I studied in my undergrad, is the best decision I have made.
-                            The degree was at times very demanding but I can also confidently say that
-                            I spent the best year of my life so far in Glasgow.
-                    </p>
+                            Fast forward to the days beyond whisky - After starting my developer journey
+                        at <a href="https://www.thg.com/" target="_blank" rel="noopener noreferrer">The Hut Group</a>, I joined<span> </span> 
+                        <a href="https://www.thoughtworks.com/" target="_blank" rel="noopener noreferrer">ThoughtWorks</a>. I was initially part of the Manchester branch but then I deserted and moved to London.
+                            I experienced some really fun months as a consultant and learnt a lot about agile practices and software practices thanks to excellent colleagues, role models and mentors.
                         <p>
-                            Fast forward to today - After having spent some exciting months as a graduate software engineer
-                        at <a href="https://www.thg.com/" target="_blank" rel="noopener noreferrer">The Hut Group</a>, I am now
-                        employed at <a href="https://www.thoughtworks.com/" target="_blank" rel="noopener noreferrer">ThoughtWorks</a><span>. </span>
-                            Here, I am given the opportunity to learn more and more about
-                            good software engineering while also meeting loads of interesting people.
+
+                            Now I work at <a href="https://www.askattest.com/" target="_blank" rel="noopener noreferrer">Attest</a><span> </span>
+                            where I am a backend engineer in the platform squad. Because of the exposure to product thinking I had 
+                            at ThoughtWorks, I also regularly wear a product manager hat to help the squad getting to know platform
+                            as a product. Luckily, Attest supports me in doing whatever I want to do even though it's not aligned with my official job title.
+                        </p>
                     </p>
                         <p>
                             I am not quite sure what this site is supposed to be or show but mainly,
-                            building it was an excellent learning experience for me.
+                            building it was a valuable learning experience for me.
                     </p>
                     </div>
                     <p className="self-description">
                         It's tricky to describe oneself in a single sentence but here goes:
                         I'm a German-citizenship-holding, UK-tax-paying, Chinese and Vietnamese child of globalisation
                         and generally a very conflicted being and as millennial as they come.
-                </p>
+                    </p>
                     <div className="huiImageWrapper"><img className="huiImage" src={hui} alt="portait of Cynthia Lee" /></div>
                 </div>
             </TemplateWrapper>
