@@ -8,22 +8,27 @@
   "version": "1.0.0",
   "author": "Cynthia Lee <cynthia@cynthialee.xyz>",
   "dependencies": {
-    "emotion": "^9.2.12",
-    "gatsby": "^2.4.6",
-    "gatsby-link": "^2.1.1",
-    "gatsby-plugin-catch-links": "^2.1.12",
-    "gatsby-plugin-google-analytics": "^2.1.20",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-remark-prismjs": "^1.2.24",
-    "gatsby-source-filesystem": "^2.0.28",
-    "gatsby-transformer-remark": "^1.7.44",
-    "history": "^4.9.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0",
+    "emotion": "^10.0.27",
+    "gatsby": "^2.19.7",
+    "gatsby-image": "^2.2.39",
+    "gatsby-link": "^2.2.30",
+    "gatsby-plugin-catch-links": "^2.1.27",
+    "gatsby-plugin-google-analytics": "^2.1.37",
+    "gatsby-plugin-manifest": "^2.2.39",
+    "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-react-helmet": "^3.1.23",
+    "gatsby-plugin-sharp": "^2.4.3",
+    "gatsby-remark-prismjs": "^3.3.33",
+    "gatsby-source-filesystem": "^2.1.53",
+    "gatsby-transformer-remark": "^2.6.58",
+    "gatsby-transformer-sharp": "^2.3.13",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
     "react-responsive-navbar": "^1.0.11",
-    "react-router-dom": "^5.0.0",
-    "sass": "^1.14.3"
+    "react-router-dom": "^5.1.2",
+    "sass": "^1.26.3"
   },
   "keywords": [
     "gatsby"
@@ -42,7 +47,6 @@
     "concurrently": "^3.6.1",
     "prettier": "^1.15.1",
     "react-custom-share": "^0.4.8",
-    "react-icons": "^2.2.7",
     "s3": "git://github.com/andrewrk/node-s3-client.git#0ed018699843a2d3cc1cb37399ead1f76a72576d"
   }
 }
