@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ResponsiveMenu from 'react-responsive-navbar';
 import Link from 'gatsby-link';
-import TiThMenu from 'react-icons/lib/ti/th-menu';
-import TiTimes from 'react-icons/lib/ti/times';
+import {TiThMenu} from 'react-icons/ti';
+import {TiTimes} from 'react-icons/ti';
 
 class Nav extends Component {
 

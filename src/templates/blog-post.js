@@ -2,10 +2,10 @@ import React from "react";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
 
-import FaTwitter from 'react-icons/lib/fa/twitter';
-import FaFacebook from 'react-icons/lib/fa/facebook';
-import FaEnvelope from 'react-icons/lib/fa/envelope';
-import FaLinkedin from 'react-icons/lib/fa/linkedin';
+import {FaTwitter} from 'react-icons/fa';
+import {FaFacebook} from 'react-icons/fa';
+import {FaEnvelope} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
 import { ShareButtonRectangle, ShareBlockStandard } from 'react-custom-share';
 import { graphql } from 'gatsby';
 import TemplateWrapper from "../components/default";

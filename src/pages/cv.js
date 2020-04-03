@@ -1,13 +1,13 @@
 import '../styles/style.css';
 import TemplateWrapper from '../components/default';
 import React, { Component } from 'react';
-import GoMortarBoard from 'react-icons/lib/go/mortar-board';
-import FaBriefcase from 'react-icons/lib/fa/briefcase';
-import TiWeatherSnow from 'react-icons/lib/ti/weather-snow';
-import MdFileDownload from 'react-icons/lib/md/file-download';
+import { GoMortarBoard } from 'react-icons/go';
+import {FaBriefcase} from 'react-icons/fa';
+import {TiWeatherSnow} from 'react-icons/ti';
+import {MdFileDownload} from 'react-icons/md';
 import CvPdf from '../img/cv.pdf';
-import IoIosHome from 'react-icons/lib/io/ios-home';
-import TiMail from 'react-icons/lib/ti/mail';
+import {IoIosHome} from 'react-icons/io';
+import {TiMail} from 'react-icons/ti';
 import Helmet from 'react-helmet'
 
 class CV extends Component {

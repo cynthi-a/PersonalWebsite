@@ -1,10 +1,10 @@
 import '../styles/style.css';
 import React, { Component } from 'react';
-import TiSocialGithub from 'react-icons/lib/ti/social-github';
+import {TiSocialGithub} from 'react-icons/ti';
 import xing from '../img/xing.png';
-import TiSocialFacebook from 'react-icons/lib/ti/social-facebook';
-import TiMail from 'react-icons/lib/ti/mail';
-import TiSocialLinkedin from 'react-icons/lib/ti/social-linkedin';
+import {TiSocialFacebook} from 'react-icons/ti';
+import {TiMail} from 'react-icons/ti';
+import {TiSocialLinkedin} from 'react-icons/ti';
 import Helmet from 'react-helmet'
 import TemplateWrapper from '../components/default';
 

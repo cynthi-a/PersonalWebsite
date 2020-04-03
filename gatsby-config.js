@@ -5,6 +5,8 @@ module.exports = {
     title: 'Cynthia Lee | Web Developer',
   },
     plugins: [
+      'gatsby-plugin-sharp',
+      'gatsby-transformer-sharp',
         'gatsby-plugin-catch-links',
         'gatsby-plugin-react-helmet',
         {
